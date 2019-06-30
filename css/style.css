@@ -1,0 +1,99 @@
+/*---------------------------*/
+/* Basic Setup */
+/*Copy to all the css*/
+/*---------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+html {
+    font-family: 'Lato', 'Open Sans', 'Raleway', 'Roboto', 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+    
+}
+
+.section {
+    height: 100vh;
+}
+
+/* #4267b2 #ecf0f1*/
+/*------------------------------------------index.html-------------------------------------------------------------*/
+
+/*---------------------------*/
+/* Cover Setup */
+/*---------------------------*/
+
+.cover-section {
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.85)), url(../img/miku00.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.vocalog-text-box {
+    float: none;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 120px;
+    color: #ecf0f1;
+    text-align: center;
+}
+
+.vocalog-text-box h1 {
+    font-size: 400%;
+    letter-spacing: 4px;
+    margin-top: 10%
+}
+
+/*---------------------------*/
+/* Cover Text Setup */
+/*---------------------------*/
+
+#vocalog-p {
+    color: #ecf0f1;
+    font-size: 22px;
+    padding: 2% 0 2% 0;
+}
+
+/*---------------------------*/
+/* Cover Button Setup */
+/*---------------------------*/
+#vocalog-a ,#vocalog-b {
+    margin: 2%;
+    padding: 2px 25px 10px 25px;
+    border-radius: 40px;
+    border: 3px solid #3498db;
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 35px;
+}
+
+#vocalog-a:hover {
+    border: 3px solid #3498db;
+    background-color: #3498db;
+    text-decoration: none;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+#vocalog-b:hover {
+    border: 3px solid #3498db;
+    background-color: #3498db;
+    text-decoration: none;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+
+
+
+
+
