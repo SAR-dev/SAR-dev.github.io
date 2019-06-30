@@ -76,6 +76,7 @@ html {
     color: #ecf0f1;
     text-decoration: none;
     font-size: 35px;
+    font-weight: 600;
 }
 
 #vocalog-a:hover {
@@ -120,15 +121,60 @@ html {
 /*---------Media Query-------*/
 /*-------------------------------*/
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
     .joinus {
         text-align: center;
-        margin: 10px;
+        margin: 15px;
     }
 
     .explore {
         text-align: center;
-        margin: 10px;
+        margin: 15px;
+    }
+    
+    .upper {
+        margin-top: 40%
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .joinus {
+        text-align: center;
+        margin: 15px;
+    }
+
+    .explore {
+        text-align: center;
+        margin: 15px;
+    }
+    
+    .upper {
+        margin-top: 45%
+    }
+    
+    #vocalog-a ,#vocalog-b {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 380px) {
+    .joinus {
+        text-align: center;
+        margin: 15px;
+    }
+
+    .explore {
+        text-align: center;
+        margin: 15px;
+    }
+    
+    .upper {
+        margin-top: 45%
+    }
+    
+    #vocalog-a ,#vocalog-b {
+        font-size: 20px;
     }
 }
 
