@@ -50,7 +50,7 @@ html {
 }
 
 .vocalog-text-box h1 {
-    font-size: 400%;
+    font-size: 300%;
     letter-spacing: 4px;
     margin-top: 10%
 }
@@ -61,7 +61,7 @@ html {
 
 #vocalog-p {
     color: #ecf0f1;
-    font-size: 22px;
+    font-size: 100%;
     padding: 2% 0 2% 0;
 }
 
@@ -69,7 +69,7 @@ html {
 /* Cover Button Setup */
 /*---------------------------*/
 #vocalog-a ,#vocalog-b {
-    margin: 2%;
+    margin: 3%;
     padding: 2px 25px 10px 25px;
     border-radius: 40px;
     border: 3px solid #3498db;
@@ -83,6 +83,7 @@ html {
     background-color: #3498db;
     text-decoration: none;
     transition: background-color 0.2s, border 0.2s, color 0.2s;
+    animation: none;
 }
 
 #vocalog-b:hover {
@@ -90,10 +91,90 @@ html {
     background-color: #3498db;
     text-decoration: none;
     transition: background-color 0.2s, border 0.2s, color 0.2s;
+    animation: none;
+}
+
+#vocalog-a, #vocalog-b {
+    animation: color-change 2s infinite;
+}
+
+.joinus {
+    text-align: right;
+}
+
+.explore {
+    text-align: left;
+}
+/*-------------------------------*/
+/*---------Hover Animation-------*/
+/*-------------------------------*/
+
+@keyframes color-change {
+    0% { border-color: #4267b2; }
+    50% { border-color: #2ecc71; }
+    100% { border-color: #2863dd; }
 }
 
 
+/*-------------------------------*/
+/*---------Media Query-------*/
+/*-------------------------------*/
 
+@media (max-width: 1000px) {
+    .joinus {
+        text-align: center;
+        margin: 15px;
+    }
 
+    .explore {
+        text-align: center;
+        margin: 15px;
+    }
+    
+    .upper {
+        margin-top: 40%
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .joinus {
+        text-align: center;
+        margin: 15px;
+    }
+
+    .explore {
+        text-align: center;
+        margin: 15px;
+    }
+    
+    .upper {
+        margin-top: 45%
+    }
+    
+    #vocalog-a ,#vocalog-b {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 380px) {
+    .joinus {
+        text-align: center;
+        margin: 15px;
+    }
+
+    .explore {
+        text-align: center;
+        margin: 15px;
+    }
+    
+    .upper {
+        margin-top: 45%
+    }
+    
+    #vocalog-a ,#vocalog-b {
+        font-size: 20px;
+    }
+}
 
 
