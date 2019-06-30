@@ -83,6 +83,7 @@ html {
     background-color: #3498db;
     text-decoration: none;
     transition: background-color 0.2s, border 0.2s, color 0.2s;
+    animation: none;
 }
 
 #vocalog-b:hover {
@@ -90,8 +91,22 @@ html {
     background-color: #3498db;
     text-decoration: none;
     transition: background-color 0.2s, border 0.2s, color 0.2s;
+    animation: none;
 }
 
+#vocalog-a, #vocalog-b {
+    animation: color-change 2s infinite;
+}
+
+/*-------------------------------*/
+/*---------Hover Animation-------*/
+/*-------------------------------*/
+
+@keyframes color-change {
+    0% { border-color: #4267b2; }
+    50% { border-color: #2ecc71; }
+    100% { border-color: #2863dd; }
+}
 
 
 
