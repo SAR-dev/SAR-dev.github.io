@@ -1,186 +1,117 @@
 /*---------------------------*/
-/* Basic Setup */
-/*Copy to all the css*/
-/*---------------------------*/
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* Color Setup */
+/*---------------------------
+black: #57606f #2f3542 #323232
+white: #dfe4ea #ced6e0
+blue: #1e90ff #2980b9 #3b5998
+green: #2ed573
+yellow: #fdcb6e #f1c40f
+---------------------------*/
 
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-html {
-    font-family: 'Lato', 'Open Sans', 'Raleway', 'Roboto', 'Montserrat', sans-serif;
-    font-size: 18px;
+body {
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
     font-weight: 400;
     text-rendering: optimizeLegibility;
     
 }
 
-.section {
+
+
+
+body {
     height: 100vh;
-}
-
-/* #4267b2 #ecf0f1*/
-/*------------------------------------------index.html-------------------------------------------------------------*/
-
-/*---------------------------*/
-/* Cover Setup */
-/*---------------------------*/
-
-.cover-section {
     background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.85)), url(../img/miku00.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
 }
 
-.vocalog-text-box {
-    float: none;
-    padding-left: 8%;
-    padding-right: 8%;
-    padding-top: 120px;
-    color: #ecf0f1;
+#vocalog {
     text-align: center;
-}
-
-.vocalog-text-box h1 {
-    font-size: 300%;
+    margin-top: 65%;
+    font-family: Lato;
+    font-weight: 900;
+    color: #ced6e0;
     letter-spacing: 4px;
-    margin-top: 10%
 }
-
-/*---------------------------*/
-/* Cover Text Setup */
-/*---------------------------*/
 
 #vocalog-p {
-    color: #ecf0f1;
-    font-size: 100%;
-    padding: 2% 0 2% 0;
-    font-weight: 500;
+    margin-top: 5%;
+    text-align: center;
+    font-family: Source Sans Pro;
+    color: #ced6e0;
     letter-spacing: 1px;
-    word-spacing: 1px;
-    line-height: 35px;
-}
-
-/*---------------------------*/
-/* Cover Button Setup */
-/*---------------------------*/
-#vocalog-a ,#vocalog-b {
-    margin: 3%;
-    padding: 2px 25px 10px 25px;
-    border-radius: 40px;
-    border: 3px solid #3498db;
-    color: #ecf0f1;
-    text-decoration: none;
-    font-size: 35px;
     font-weight: 600;
-    text-shadow: 3px 1px 1px rgba(132, 132, 132, 0.54);
 }
 
-#vocalog-a:hover {
-    border: 3px solid #3498db;
-    background-color: #3498db;
+.button a {
     text-decoration: none;
-    transition: background-color 0.2s, border 0.2s, color 0.2s;
-    animation: none;
+    font-size: 25px;
+    font-weight: 800;
+    color: #ced6e0;
 }
 
-#vocalog-b:hover {
-    border: 3px solid #3498db;
-    background-color: #3498db;
-    text-decoration: none;
-    transition: background-color 0.2s, border 0.2s, color 0.2s;
-    animation: none;
+
+.button-a, .button-b {
+    text-align: center;
+    border: 5px solid;
+    padding: 2%;
+    border-radius: 35px;
+    animation: color-change 3s infinite;
+    max-width: 200px;
 }
 
-#vocalog-a, #vocalog-b {
-    animation: color-change 2s infinite;
+.button-a:hover, .button-b:hover {
+    background-color: #27ae60;
 }
 
-.joinus {
-    text-align: right;
-}
 
-.explore {
-    text-align: left;
-}
 /*-------------------------------*/
-/*---------Hover Animation-------*/
+/*---------Color Animation-------*/
 /*-------------------------------*/
 
 @keyframes color-change {
-    0% { border-color: #4267b2; }
-    50% { border-color: #2ecc71; }
-    100% { border-color: #2863dd; }
+    0% { border-color: #557dd0; }
+    50% { border-color: #2ed573; }
+    100% { border-color: #557dd0; }
 }
 
 
-/*-------------------------------*/
-/*---------Media Query-------*/
-/*-------------------------------*/
-
-@media (max-width: 1000px) {
-    .joinus {
-        text-align: center;
-        margin: 15px;
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .button-a, .button-b {
+        max-width: 100px;
+        margin-left: 40%;
+        margin-bottom: 2%;
+        padding: 1%;
     }
-
-    .explore {
-        text-align: center;
-        margin: 15px;
+    .button a {
+        font-size: 15px;
     }
-    
-    .upper {
-        margin-top: 40%
+    #vocalog {
+        margin-top: 45%;
     }
     
-}
+} 
 
-@media (max-width: 768px) {
-    .joinus {
-        text-align: center;
-        margin: 15px;
-    }
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {...} 
 
-    .explore {
-        text-align: center;
-        margin: 15px;
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    #vocalog-p {
+        margin-bottom: 7%;
     }
-    
-    .upper {
-        margin-top: 45%
-    }
-    
-    #vocalog-a ,#vocalog-b {
-        font-size: 25px;
-    }
-}
+} 
 
-@media (max-width: 380px) {
-    .joinus {
-        text-align: center;
-        margin: 15px;
-    }
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {...} 
 
-    .explore {
-        text-align: center;
-        margin: 15px;
-    }
-    
-    .upper {
-        margin-top: 45%
-    }
-    
-    #vocalog-a ,#vocalog-b {
-        font-size: 20px;
-    }
-}
-
-
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {...}
