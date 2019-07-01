@@ -33,7 +33,7 @@ body {
 
 .navbar {
     background-color: #3b5998;
-    box-shadow: 5px 5px 5px 5px grey;
+    box-shadow: 0px 5px 5px 5px grey;
     font-weight: 600;
 }
 
