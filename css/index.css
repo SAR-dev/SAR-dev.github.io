@@ -54,7 +54,7 @@ body {
 
 .center {text-align: center}
 
-.btn {
+.explore {
     color: #ced6e0;
     border: 3px solid;
     font-size: 200%;
@@ -66,9 +66,38 @@ body {
     animation: color-change 2s infinite;
 }
 
-.btn:hover {
+.explore:hover {
     background-color: #ced6e0;
     color: #57606f;
+}
+
+/*-------------------------------*/
+/*---------Contact Us-------*/
+/*-------------------------------*/
+.contactUsSection {
+    background-color: #ced6e0;
+    font-family: Lato;
+}
+.contactUsSection h1 {
+    margin-bottom: 40px;
+    font-weight: 600;
+    color: #3b5998;
+}
+
+.contactUsSection label {
+    color: #333;
+}
+
+.btn-send {
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    margin-bottom: 20px;
+}
+
+.help-block.with-errors {
+    color: #ff5050;
+    margin-top: 5px;
 }
 
 /*-------------------------------*/
@@ -93,6 +122,9 @@ body {
     }
 }
 
+/*-------------------------------*/
+/*---------Media Query-------*/
+/*-------------------------------*/
 
 /* Media Query Height*/
 
