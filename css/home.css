@@ -4,7 +4,7 @@
 black: #57606f #2f3542 #323232
 white: #dfe4ea #ced6e0
 blue: #1e90ff #2980b9 #3b5998
-green: #2ed573
+green: #2ed573 #10ac84 #4CAF50
 yellow: #fdcb6e #f1c40f
 ---------------------------*/
 
@@ -33,7 +33,7 @@ body {
 
 .navbar {
     background-color: #3b5998;
-    box-shadow: 0px 5px 5px 5px grey;
+    box-shadow: 0px 2px 2px 2px grey;
     font-weight: 600;
 }
 
@@ -43,14 +43,15 @@ body {
 
 #colorstrip-a{
     border-bottom: 30px solid #dfe4ea;
-    box-shadow: 0px 7px 7px 7px grey;  
+    box-shadow: 0px 2px 2px 2px grey;  
 }
 
 .leftNewsSection h5 {
-    font-weight: 600;
+    font-weight: 700;
     text-align: center;
     margin-top: -45px;
     color: #2f3542;
+    font-family: Raleway;
 }
 
 /*---------------------------*/
@@ -60,7 +61,7 @@ body {
 /*----White Border----*/
 .newsSection {
     border: 1px solid #ced6e0;
-    box-shadow: 0px 5px 5px 5px grey;
+    box-shadow: 0px 2px 2px 2px grey;
     font-family: Open Sans, sans-serif;
 }
 /*-------------------*/
@@ -84,18 +85,17 @@ body {
 
 .newslinkText h5 {
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 700;
     text-align: left;
     margin-top: 9px;
     line-height: 22px;
-    color: #323232;
     color: #2980b9;
+    font-family: Open Sans, sans-serif;
 }
 
 .newslinkText p {
-    font-size: 12px;
+    font-size: 13px;
     text-align: justify;
-    color: #4d4d4d;
 }
 
 .newslinkText a {
@@ -108,10 +108,11 @@ body {
 /* Right News Section Setup */
 /*---------------------------*/
 .rightNewsSection h5 {
-    font-weight: 600;
+    font-weight: 700;
     text-align: center;
     margin-top: -45px;
-    color: #2f3542;  
+    color: #2f3542; 
+    font-family: Raleway;
 }
 
 .rightNewsSection img {
@@ -129,7 +130,7 @@ body {
     font-size: 14px;
     font-weight: 600;
     text-align: center;
-    color: #4d4d4d;
+    color: #4CAF50;
     margin-top: 12px;
 }
 
@@ -153,13 +154,24 @@ body {
 @media (min-width: 576px) { ... }
 
 
-@media (min-width: 768px) { ... }
+@media (min-width: 768px) { 
+    .newsLink img {
+        width: 275px;
+    }
+}
 
 
-@media (min-width: 992px) { ... }
+@media (min-width: 992px) {
+    .newsLink img {
+        width: 250px;
+    }
+}
 
-
-@media (min-width: 1200px) { ... }
+@media (min-width: 1200px) { 
+    .newsLink img {
+        width: 275px;
+    }
+}
 
 
 /*-------------------------------*/
