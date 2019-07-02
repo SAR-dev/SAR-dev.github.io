@@ -18,100 +18,164 @@ body {
     font-size: 16px;
     font-weight: 400;
     text-rendering: optimizeLegibility;
-    
+
 }
 
 
-
-
-body {
+.section {
     height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.85)), url(../img/miku00.jpg);
+}
+
+.headerSection {
+    background: linear-gradient(to bottom,rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.85)), url(../img/miku00.jpg) no-repeat center center fixed;
     background-size: cover;
     background-position: center;
-    height: 100vh;
 }
 
 #vocalog {
     text-align: center;
-    margin-top: 65%;
+    margin-top: 200px;
     font-family: Lato;
     font-weight: 900;
     color: #ced6e0;
     letter-spacing: 4px;
+    font-size: 500%;
 }
 
 #vocalog-p {
-    margin-top: 5%;
+    margin-top: 4%;
     text-align: center;
     font-family: Source Sans Pro;
     color: #ced6e0;
     letter-spacing: 1px;
     font-weight: 600;
+    font-size: 150%;
 }
 
-.button a {
-    text-decoration: none;
-    font-size: 25px;
-    font-weight: 800;
+.center {text-align: center}
+
+.btn {
     color: #ced6e0;
+    border: 3px solid;
+    font-size: 200%;
+    font-weight: 600;
+    margin-top: 5%;
+    border-radius: 50px;
+    letter-spacing: 1px;
+    padding: 10px 25px 10px 25px;
+    animation: color-change 2s infinite;
 }
 
-
-.button-a, .button-b {
-    text-align: center;
-    border: 5px solid;
-    padding: 2%;
-    border-radius: 35px;
-    animation: color-change 3s infinite;
-    max-width: 200px;
+.btn:hover {
+    background-color: #ced6e0;
+    color: #57606f;
 }
-
-.button-a:hover, .button-b:hover {
-    background-color: #27ae60;
-}
-
 
 /*-------------------------------*/
 /*---------Color Animation-------*/
 /*-------------------------------*/
 
 @keyframes color-change {
-    0% { border-color: #557dd0; }
-    50% { border-color: #2ed573; }
-    100% { border-color: #557dd0; }
+    0% {
+        border-color: #ced6e0;
+    }
+
+    40% {
+        border-color: #1e90ff;
+    }
+
+    80% {
+        border-color: #2ed573;
+    }
+    
+    100% {
+        border-color: #ced6e0;
+    }
 }
 
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-    .button-a, .button-b {
-        max-width: 100px;
-        margin-left: 40%;
-        margin-bottom: 2%;
-        padding: 1%;
-    }
-    .button a {
-        font-size: 15px;
-    }
+/* Media Query Height*/
+
+@media only screen and (min-height: 300px) {
     #vocalog {
-        margin-top: 45%;
+        font-size: 350%;
     }
+}
+
+@media only screen and (min-height: 500px) {
+    #vocalog {
+        margin-top: 250px;
+    }
+}
+
+@media only screen and (min-height: 700px) {
+    #vocalog {
+        margin-top: 300px;
+    }
+}
+
+@media only screen and (min-height: 900px) {
+    #vocalog {
+        margin-top: 400px;
+    }
+}
+
+@media only screen and (min-height: 1200px) {
     
-} 
+}
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {...} 
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-    #vocalog-p {
-        margin-bottom: 7%;
+/* Media Query Width*/
+@media only screen and (min-width: 200px) {
+    #vocalog {
+        font-size: 250%;
     }
-} 
+    #vocalog-p {
+        font-size: 100%;
+    }
+}
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {...} 
+@media only screen and (min-width: 400px) {
+    #vocalog {
+        font-size: 250%;
+    }
+    #vocalog-p {
+        font-size: 110%;
+    }
+}
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {...}
+@media only screen and (min-width: 600px) {
+    #vocalog {
+        font-size: 400%;
+    }
+    #vocalog-p {
+        font-size: 120%;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    #vocalog {
+        font-size: 400%;
+    }
+    #vocalog-p {
+        font-size: 130%;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    #vocalog {
+        font-size: 450%;
+    }
+    #vocalog-p {
+        font-size: 150%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    #vocalog {
+        font-size: 500%;
+    }
+    #vocalog-p {
+        font-size: 150%;
+    }
+}
