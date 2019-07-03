@@ -20,6 +20,7 @@ html,body {
     font-weight: 600;
     letter-spacing: 2px;
     margin: 0 2px;
+    padding: 3px 10px;
 }
 
 .vocalog-nav .nav-link:hover {

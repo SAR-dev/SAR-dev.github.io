@@ -1,0 +1,214 @@
+/*---------------------------*/
+/* Color Setup */
+/*---------------------------
+black: #57606f #2f3542 #323232
+white: #dfe4ea #ced6e0
+blue: #1e90ff #2980b9 #3b5998
+green: #2ed573 #10ac84 #4CAF50
+yellow: #fdcb6e #f1c40f
+---------------------------*/
+html {
+  scroll-behavior: smooth;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+    
+}
+
+/*---------------------------*/
+/* Navbar Setup */
+/*---------------------------*/
+
+.vocalog-nav {
+    background-color:rgb(1, 55, 118) !important;
+}
+
+.vocalog-nav .nav-link {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin: 0 2px;
+    font-family: Open Sans;
+    padding: 3px 10px;
+}
+
+.vocalog-nav .nav-link:hover {
+    color: #b52c96;
+    background-color: white;
+    border-radius: 5px;
+}
+
+#active a {
+    color: #b52c96;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.fa-bars {
+    color: white;
+}
+
+/*---------------------------*/
+/* Colorstrip White Bar Setup */
+/*---------------------------*/
+
+#colorstrip-a{
+    border-bottom: 30px solid #dfe4ea;
+    box-shadow: 0px 2px 2px 2px grey;  
+}
+
+.leftNewsSection h5 {
+    font-weight: 700;
+    text-align: center;
+    margin-top: -45px;
+    color: #2f3542;
+    font-family: Raleway;
+}
+
+/*---------------------------*/
+/* Left News Section Setup */
+/*---------------------------*/
+
+/*----White Border----*/
+.newsSection {
+    border: 1px solid #ced6e0;
+    box-shadow: 0px 2px 2px 2px grey;
+    font-family: Open Sans, sans-serif;
+}
+/*-------------------*/
+.newsLink {
+    display: table-cell;
+}
+
+.newslinkText {
+    margin-bottom: 10px;
+}
+
+.newsLink img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 275px;
+    max-height: 200px;
+    object-fit:cover;
+    float: left;
+    position: relative;
+}
+
+.newslinkText h5 {
+    font-size: 14px;
+    font-weight: 700;
+    text-align: left;
+    margin-top: 9px;
+    line-height: 22px;
+    color: #2980b9;
+    font-family: Open Sans, sans-serif;
+}
+
+.newslinkText p {
+    font-size: 13px;
+    text-align: justify;
+}
+
+.newslinkText a {
+    text-decoration: none;
+    color: #212529;
+}
+
+
+/*---------------------------*/
+/* Right News Section Setup */
+/*---------------------------*/
+.rightNewsSection h5 {
+    font-weight: 700;
+    text-align: center;
+    margin-top: -45px;
+    color: #2f3542; 
+    font-family: Raleway;
+}
+
+.rightNewsSection img {
+    padding-bottom: 10px; 
+    padding-top: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.newslinkTextRight h5 {
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    color: #4CAF50;
+    margin-top: 12px;
+}
+
+.newslinkTextRIght a {
+    text-decoration: none;
+    color: #212529;
+}
+
+.newslinkTextRight p {
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center
+}
+
+
+/*---------------------------*/
+/* Media Queries Section Setup */
+/*---------------------------*/
+
+
+@media (min-width: 576px) { ... }
+
+
+@media (min-width: 768px) { 
+    .newsLink img {
+        width: 275px;
+    }
+}
+
+
+@media (min-width: 992px) {
+    .newsLink img {
+        width: 250px;
+    }
+}
+
+@media (min-width: 1200px) { 
+    .newsLink img {
+        width: 275px;
+    }
+}
+
+
+/*-------------------------------*/
+/*---------Hover Animation-------*/
+/*-------------------------------*/
+
+@keyframes color-change {
+    0% { color: #4267b2; }
+    50% { color: #2ecc71; }
+    100% { color: #2863dd; }
+}
+
+
+
