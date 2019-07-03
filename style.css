@@ -182,18 +182,16 @@ html,body {
     font-size: 55px;
     font-weight: 600;
     text-transform: uppercase;
-    border: 10px solid;
+    border: 10px solid #1a3069;
     border-radius: 30px;
     padding: 15px 40px;
     text-align: center;
-    background-color: #2980b9;
+    background-color: #273c75;
     color: #ffffff;
-    -webkit-animation: color-change 2s infinite;
-    animation: color-change 2s infinite;
 }
 
 .join-us-btn:hover {
-    color: #2980b9;
+    color: #273c75;
     background-color: #ffffff;
     -webkit-transition: 1s;
     transition: 1s;
