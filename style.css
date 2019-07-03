@@ -232,6 +232,11 @@ html,body {
 
 
 /*Contact Us*/
+
+.contactUsSection {
+    background-color: #ebebeb;
+}
+
 .contactUsSection-heading p {
     font-size: 65px;
     text-align: center;
