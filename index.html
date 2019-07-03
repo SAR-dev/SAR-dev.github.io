@@ -1,206 +1,227 @@
 <!doctype html>
 <html lang="en">
-<!-----------  ----------->
 
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-----------  ----------->
 
-    <!---- Bootstrap CSS ----->
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <!-----------  ----------->
-
-    <!------External CSS------>
-    <link rel="stylesheet" type="text/css" href="css/index.css">
-    <!-----------  ----------->
-
-    <!----- Google Fonts ------>
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900|Montserrat:400,600,800,900|Open+Sans:400,700,800|Raleway:400,600,800,900|Roboto:400,500,700,900|Source+Sans+Pro:400,600,900&display=swap" rel="stylesheet">
-    <!-----------  ----------->
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <!-- Google Fonts (Open Sans)-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap" rel="stylesheet">
+    
     <link rel="shortcut icon" href="img/favicon.png" />
     <title>VOCAlog</title>
 </head>
 
 <body>
 
-    <div class="section headerSection">
-        <div class="row">
-            <div class="col-xl-3 col-lg-3 col-md-2 col-sm-2 col-xs-2 upper">
-            </div>
-            <div class="col-xl-6 col-lg-6 col-md-8 col-sm-8 col-xs-8 center">
-                <h1 id="vocalog">VOCAlog</h1>
-                <p id="vocalog-p"> We want to spread the awesomeness of<br>VOCALOID</p>
-            </div>
-            <div class="col-xl-3 col-lg-3 col-md-2 col-sm-2 col-xs-2 lower">
-            </div>
-        </div>
+    <!-- Navbar Starts -->
 
-        <div class="row">
-            <div class="col-xl-4 col-lg-4 col-md-2 col-sm-2 col-xs-2 upper">
-            </div>
-            <div class="col-xl-4 col-lg-4 col-md-8 col-sm-8 col-xs-8 center">
-                <a href="pages/home.html" class="btn btn-lg explore">EXPLORE</a>
-            </div>
-            <div class="col-xl-4 col-lg-4 col-md-2 col-sm-2 col-xs-2 lower">
-            </div>
+    <nav class="navbar navbar-expand-lg vocalog-nav fixed-top">
+        <a class="navbar-brand nav-link" href="#">VOCALog</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span> <i class="fa fa-bars"></i> </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">News</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Library</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Forum</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Sign Up</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Sign In</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Navbar Ends -->
+
+    <!-- Cover Page Starts -->
+
+    <div id="home">
+
+        <div class="home-text">
+            <p class="home-text-heading">Welcome to VOCAlog</p>
+            <p class="home-text-para d-none d-sm-block">Be a part of this global family and spread the awesomeness of VOCALOID</p>
+            <a href="#" class="btn btn-lg btn-outline-light explore-button">EXPLORE</a>
         </div>
     </div>
 
-
-    <div class="container">
-        <div class="row">
+    <!-- Cover Page Ends -->
 
 
-            <div class="section whoAreWe">
+    <!-- What Is This Page Starts -->
 
-                <div class="row" id="mikupose">
-                    <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-xs-12">
-                        <img src="img/miku02.png">
+    <div class="container-fluid whatIsThis">
+        <div class="container mb-8">
+
+            <div class="row mt-5 whatIsThis-heading">
+                <div class="col-md-12">
+                    <p>What Is This Place?</p>
+                </div>
+            </div>
+
+            <div class="row mt-5 mb-5">
+                
+                <div class="col-md-4">
+                    <div class="card card001">
+                        <i class="fas fa-users"></i>
+                        <div class="card-body">
+                            <div class="card-title">Forum</div>
+                            <div class="card-text">We have a forum here. You can discuss about vocaloids there. As long as you are abiding by the forum rules you can have fun as much as we want.</div>
+                        </div>
                     </div>
-                    <div class="col-lg-7 col-xl-7 col-md-12 col-sm-12 col-xs-12">
-                        <h1 id="mikuposeHead">WHAT IS THIS PLACE?</h1>
-                        <p id="mikuposeText">This place serves as a place for discussion, sharing news and informations related to vocaloid softwares and vocaloid singers</p>
-                    </div>
                 </div>
-            </div>
-
-            <div class="row section" id="vocaloidSoftware">
-                <div class="col-12">
-                    <h1>VOCALOID SOFTWARE</h1>
-                    <p>Vocaloid (ボーカロイド Bōkaroido) is a singing voice synthesizer software. The software enables users to synthesize "singing" by typing in lyrics and melody. It uses synthesizing technology with specially recorded vocals of voice actors or singers.</p>
-                </div>
-            </div>
-
-            <div class="row section" id="vocaloidSinger">
-                <div class="col-lg-7 col-xl-7 col-md-12 col-sm-12 col-xs-12">
-                    <h1 id="vocaloidSingerHead">Vocaloid Singers Have the Coolest Character Designs</h1>
-                        <p id="vocaloidSingerText">You can say that Character Design is the main reason for which people get attracted to vocaloids. Since Vocaloid characters don't have any definite character designs, anybody can create their own.</p>
-
-                </div>
-                <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-xs-12">
-                    <img src="img/miku03.png">
-                </div>
-
-
-            </div>
-
-
-        </div>
-
-    </div>
-
-
-
-
-
-
-
-    <div class="container-fluid bg-secondary">
-        <div class="contactUsSection">
-
-            <div class="row">
-
-                <div class="col-xl-8 offset-xl-2 col-lg-8 offset-lg-2 col-md-8 offset-md-2 col-sm-8 offset-sm-2 col-xs-8 offset-xs-2 py-5">
-
-                    <h1>Contact Us</h1>
-
-                    <form id="contact-form" method="post" action="https://formspree.io/sayedarrafi.bd@gmail.com" role="form">
-
-                        <div class="messages"></div>
-
-                        <div class="controls">
-
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="form_name">Firstname *</label>
-                                        <input id="form_name" type="text" name="First Name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="form_lastname">Lastname *</label>
-                                        <input id="form_lastname" type="text" name="Last Name" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="form_email">Email *</label>
-                                        <input id="form_email" type="email" name="Email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="form_need">Please specify your need *</label>
-                                        <select id="form_need" name="Reason" class="form-control" required="required" data-error="Please specify your need.">
-                                            <option value=""></option>
-                                            <option value="Submit News">Submit News</option>
-                                            <option value="Submit Article">Submit Article</option>
-                                            <option value="Feedback">Feedback</option>
-                                            <option value="Other">Other</option>
-                                        </select>
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <label for="form_message">Message *</label>
-                                        <textarea id="form_message" name="Message" class="form-control" placeholder="Message for me *" rows="8" required="required" data-error="Please, leave us a message."></textarea>
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <input type="submit" class="btn btn-success btn-send" value="Send message">
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <p class="text-muted">
-                                        <strong>*</strong> These fields are required.</p>
-                                </div>
-                            </div>
+                
+                <div class="col-md-4">
+                    <div class="card card002">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                        <div class="card-body">
+                            <div class="card-title">Update</div>
+                            <div class="card-text">You will get the latest updates about vocaloid software, concerts, figurines of vocaloid singers and many more. You can also send us articles.</div>
                         </div>
 
-                    </form>
-
+                    </div>
                 </div>
+                
+                <div class="col-md-4">
+                    <div class="card card003">
+                        <i class="fas fa-users"></i>
+                        <div class="card-body">
+                            <div class="card-title">Information</div>
+                            <div class="card-text">We have a huge collection of various informations in our Library and huge photo collection of figurines and fan arts in our Gallery about the vocaloids.</div>
+                        </div>
 
-
+                    </div>
+                </div>
+                
             </div>
-
-
         </div>
-
     </div>
 
+    <!-- What Is This Page Ends -->
 
+    <!-- About Vocaloid Page Starts -->
+    
+    <div class="container-fluid pt-5 pb-5 vocaloidSection">
+        <div class="container">
+            
+            <div class="row mt-5 top-heading vocaloidSection-heading">
+                <div class="col-md-12">
+                    <p>Vocaloid</p>
+                </div>
+            </div> 
+            
+            <div class="row mt-4">
+                <div class="col-sm-6">
+                    <img src="img/miku01.jpg" class="img-fluid miku-image" alt="Hatsune Miku">
+                </div>
+                
+                <div class="col-sm-6">
+                    <h3 class="miku-image-heading">Vocaloid Software</h3>
+                    <p class="miku-image-para">Vocaloid (ボーカロイド Bōkaroido) is a singing voice synthesizer software. The software enables users to synthesize "singing" by typing in lyrics and melody. <br/>It uses synthesizing technology with specially recorded vocals of voice actors or singers. Various voice banks have been released for use with the Vocaloid synthesizer technology. Each is sold as "a singer in a box" designed to act as a replacement for an actual singer. <br/> As such, they are released under a moe anthropomorphism. These avatars are also referred to as Vocaloids, and are often marketed as virtual idols.</p>
+                </div>
+            </div>
+            
+            
+            <div class="row mt-4">
+                
+                <div class="col-sm-6 order-md-12">
+                    <img src="img/miku02.jpg" class="img-fluid miku-image" alt="Hatsune Miku">
+                </div>
+                
+                <div class="col-sm-6 order-md-1">
+                    <h3 class="miku-image-heading">Vocaloid Singer</h3>
+                    <p class="miku-image-para">A VOCALOID refers heavily to an illustrated character of a VOCALOID™-powered voicebank.<br/>The marketing of a vocalist varies by company and some companies may provide their vocalist with a basic profile, backstory, or personality that the consumer can work with. The illustration of a vocalist has no effect on the software and is done purely for decorative purposes.
+                    <br/>In order for a product to be classified as a "VOCALOID", there should be acknowledgment by the YAMAHA Corporation under their licensing terms and there is a VOCALOID™-powered vocal in development or fully released.</p>
+                </div>
+                
+            </div>
+            
+        </div>
+    
+    </div>
+    
+    <!--  About Vocaloid Page Ends  -->
 
-    <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
-        <div class="container-fluid text-center">
-            <small>Copyright &copy; VOCAlog</small>
+    <!--  Concert Section Starts  -->
+    
+    <div class="container-fluid liveConcertSection">
+    
+        <div class="container pt-5 pb-5">
+            <div class="row top-heading mt-5">
+                <div class="col-md-12 liveConcertSection-heading">
+                    <p>Live Concert</p>
+                </div>
+                <div class="col-md-12 pt-5 pr-5 pl-5 liveConcertSection-para">
+                    <p>You'll be thankful that you wore a tank top. Proud of your outfit, you will take a selfie or two. It will be way too dark to tell if both of your eyes are open in the photo, so don't expect to post that on Instagram later.Right before 9, the opener will leave the stage. Their very human hands wave goodbye as their very human voices tease the crowd that Miku will be appearing soon. You'll start to get excited about her entrance. Will she just materialize in the middle of the stage? Why stay stuck to the stage if she's just digital, anyway?</p> <p><strong class="liveConcertSection-p-s">EVEN MIKU WILL START HER SET A LITTLE LATE</strong></p><p>Your question about how she'll kick things off will be answered, and it will disappoint you slightly. She'll beam onto the middle of the stage and get right into it. It will strike you as unimpressive, except for the fact that she is an eight-foot-tall virtual pop star who just appeared out of thin air, so, no, it's totally impressive.<br/></p><p><strong class="liveConcertSection-p-s">HATSUNE MIKU BOILS DOWN THE CONCERT EXPERIENCE INTO ITS MOST NECESSARY FACETS: SINGING, DANCING AND FUN</strong></p>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+    
+    <!--  Concert Section Ends  -->
+    
+    <!--  Join Us  -->
+    <div class="container-fluid">
+        <div class="container mt-5 mb-5">
+            <div class="row p-5">
+                <div class="col-sm-12 col-md-12 col-lg-6 mb-4 join-us-image">
+                    <img src="img/join%20us.gif">
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-6 join-us">
+                    <a href="#" class="join-us-btn">Join Us</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--  Join Us  -->
+    
+    <!--  Footer Starts  -->
+    
+    <footer class="container-fluid">
+        <div class="container pt-3 pb-3">
+            <div class="row">
+                <div class="col-md-4"></div>
+                <div class="col-md-4 text-center">Copyright &copy; VOCAlog </div>
+                <div class="col-md-4"></div>
+            </div>
         </div>
     </footer>
+    
+    <!--  Footer Ends   -->
 
-    -->
+
+
+
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js" integrity="sha256-dHf/YjH1A4tewEsKUSmNnV05DDbfGN3g7NMq86xgGh8=" crossorigin="anonymous"></script>
-    <!-----------  ----------->
-    <script src="../js/script.js"></script>
-
-</body>
-
-</html>
+</body></html>

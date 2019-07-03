@@ -1,0 +1,244 @@
+/*Basic Setup*/
+
+html,body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Open Sans';
+}
+
+.top-heading p{width: 100%; text-align: center; font-size: 70px; text-transform: capitalize;}
+
+/*NavBar Setup*/
+
+.vocalog-nav {
+    background-color:rgba(1, 55, 118, 0.65) !important;
+}
+
+.vocalog-nav .nav-link {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.vocalog-nav .nav-link:hover {
+    color: #b52c96;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.fa-bars {
+    color: white;
+}
+
+/*Cover Setup*/
+
+#home {
+    background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(118, 117, 117, 0.03)),to(rgba(18, 18, 18, 0.72))), url(img/miku00.jpg);
+    background-image: linear-gradient(rgba(118, 117, 117, 0.03),rgba(18, 18, 18, 0.72)), url(img/miku00.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+}
+
+.home-text {
+    position: absolute;
+    top: 35%;
+    text-align: center;
+    width: 100%;
+    color: white;
+}
+
+.home-text-heading {
+    font-size: 70px;
+    text-transform: uppercase;
+}
+
+.home-text-para {
+    font-size: 30px;
+    text-transform: capitalize;
+}
+
+.explore-button {
+    font-weight: 500;
+    
+}
+
+
+/*What is this place*/
+.whatIsThis {
+    margin-bottom: 15%;
+}
+.whatIsThis-heading {
+    width: 100%;
+    text-align: center;
+    color: #105580;
+    font-size: 70px;
+    font-weight: 700;
+}
+
+.card001, .card002, .card003 {
+    text-align: center;
+    border: none;
+    border-radius: 0px 30px 0px 30px;
+    -webkit-box-shadow: -19px 19px 43px 0px rgba(0,0,0,0.61);
+    box-shadow: -19px 19px 43px 0px rgba(0,0,0,0.61);
+    margin: 10px;
+}
+
+.card001:hover, .card002:hover, .card003:hover {
+    background-color: rgba(188, 188, 188, 0.24);
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+
+.card i {
+    color: #013776;
+    font-size: 60px;
+    margin-top: 25px;
+}
+
+.card .card-title {
+    font-weight: 800;
+    font-size: 25px;
+    color: #808080;
+}
+
+.card .card-text {
+    font-weight: 400;
+    color: #9d9d9d;
+}
+
+
+/*Vocaloid*/
+
+.vocaloidSection-heading {
+    width: 100%;
+    text-align: center;
+    color: #16a085;
+    font-size: 70px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.vocaloidSection {
+    background-color: #ebebeb;
+}
+
+.miku-image-heading {
+    color: #6a6a6a;
+    font-size: 35px;
+    padding-top: 25px;
+    font-weight: 600;
+    
+}
+
+.miku-image-para {
+    color: grey;
+    font-size: 17px;
+    text-align: justify;
+    
+}
+
+.miku-image {
+    border-radius: 0px 30px;
+}
+
+/*Live Concert*/
+
+.liveConcertSection {
+    background-image:-webkit-gradient(linear,left top, left bottom,from(rgba(77, 77, 77, 0.99)),to(rgba(54, 54, 54, 0.46))), url(img/miku03.jpg);
+    background-image:linear-gradient(rgba(77, 77, 77, 0.99),rgba(54, 54, 54, 0.46)), url(img/miku03.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+.liveConcertSection-heading {
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.liveConcertSection-para p {
+    font-size: 18px;
+    text-align: center;
+    line-height: 35px;
+    color: #ffffff;
+}
+
+.liveConcertSection-p-s {
+    font-size: 25px;
+}
+
+
+/*Join Us*/
+
+.join-us-btn {
+    font-size: 55px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: 10px solid;
+    border-radius: 30px;
+    padding: 15px 40px;
+    text-align: center;
+    background-color: #2980b9;
+    color: #ffffff;
+    -webkit-animation: color-change 2s infinite;
+    animation: color-change 2s infinite;
+}
+
+.join-us-btn:hover {
+    color: #2980b9;
+    background-color: #ffffff;
+    -webkit-transition: 1s;
+    transition: 1s;
+}
+
+.join-us a {
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+.join-us {
+    margin-top:15%;
+    text-align: center;
+}
+
+.join-us-image {
+    text-align: center;
+}
+
+/*Footer*/
+footer {
+    background-color: #1f1f1f;
+    color: white;
+    font-size: 12px;
+}
+
+/*Animation*/
+
+@-webkit-keyframes color-change {
+    0% {
+        border-color: #ced6e0;
+    }
+
+    40% {
+        border-color: #1e90ff;
+    }
+
+    80% {
+        border-color: #2ed573;
+    }
+    
+    100% {
+        border-color: #46a3fd;
+    }
+}
+
+
+
