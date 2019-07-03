@@ -220,6 +220,7 @@ html,body {
 
 .join-us-image {
     text-align: center;
+    display: block;
 }
 
 /*Footer*/
@@ -249,5 +250,12 @@ footer {
     }
 }
 
+/*Media Query*/
+
+@media only screen and (max-width: 600px) {
+    .join-us-image img {
+        width: 250px;
+    }
+} 
 
 
