@@ -7,9 +7,7 @@ blue: #1e90ff #2980b9 #3b5998
 green: #2ed573 #10ac84 #4CAF50
 yellow: #fdcb6e #f1c40f
 ---------------------------*/
-html {
-  scroll-behavior: smooth;
-}
+
 body {
     font-family: 'Roboto', sans-serif;
     font-family: 'Lato', sans-serif;
@@ -171,6 +169,12 @@ body {
     text-align: center
 }
 
+/*Footer*/
+footer {
+    background-color: #1f1f1f;
+    color: white;
+    font-size: 12px;
+}
 
 /*---------------------------*/
 /* Media Queries Section Setup */
