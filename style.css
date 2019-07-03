@@ -19,10 +19,16 @@ html,body {
     font-size: 18px;
     font-weight: 600;
     letter-spacing: 2px;
-    padding-left: 5px;
+    margin: 0 2px;
 }
 
 .vocalog-nav .nav-link:hover {
+    color: #b52c96;
+    background-color: white;
+    border-radius: 5px;
+}
+
+#active a {
     color: #b52c96;
     background-color: white;
     border-radius: 5px;
