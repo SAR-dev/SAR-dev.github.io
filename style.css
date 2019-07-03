@@ -230,6 +230,24 @@ html,body {
     display: block;
 }
 
+
+/*Contact Us*/
+.contactUsSection-heading p {
+    font-size: 65px;
+    text-align: center;
+    line-height: 35px;
+    color: #f39c12;
+    font-weight: 700;
+}
+
+.contactUsSectionImg img {
+    max-width: 350px;
+}
+
+.contactUsSectionImg {
+    text-align: center;
+}
+
 /*Footer*/
 footer {
     background-color: #1f1f1f;
