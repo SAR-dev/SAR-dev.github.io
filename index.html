@@ -211,31 +211,47 @@
     <!--  Contact Us Starts -->
 
     <div class="container-fluid contactUsSection">
-        <div class="container mt-5 mb-5">
+        <div class="container mt-5">
             <div class="row pt-5 pb-5">
-                <div class="col-md-12 mb-5 contactUsSection-heading">
+                <div class="col-md-12 mt-5 mb-5 contactUsSection-heading">
                     <p>Contact Us</p>
+                </div>
+                
+                <div class="col-sm-3">
+                    
                 </div>
                 
                 <div class="col-sm-6 mt-3 mb-3">
                     <form method="post" action="https://formspree.io/sayedarrafi.bd@gmail.com">
-                        <div class="form-group">
-                            <label for="Email-Address">Email address</label>
-                            <input type="email" class="form-control" id="exampleFormControlInput1" name="E-mail address">
+                       
+                        <div class="form-group"> 
+                            <div class="row">
+                            <div class="col">
+                              <input type="text" class="form-control" placeholder="First name" name="First name">
+                            </div>
+                            <div class="col">
+                              <input type="text" class="form-control" placeholder="Last name" name="Last name">
+                            </div>
+                            </div>
+                          </div>
+
+                        <div class="form-group"> 
+                            <input type="email" class="form-control" id="exampleFormControlInput1" name="E-mail address" placeholder="*E-mail Address">
                         </div>
 
-                        <div class="form-group">
-                            <label for="Message">Message</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="6" name="Message"></textarea>
+                        <div class="form-group">                   
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="6" name="Message" placeholder="*Message for me"></textarea>
                         </div>
+                        
                         <div class="form-group">
                             <button class="btn btn-lg btn-primary" type="submit">Submit</button>
                         </div>
+                        
                     </form>
                 </div>
                 
-                <div class="col-sm-6 contactUsSectionImg">
-                    <img src="img/contact%20us.png">
+                <div class="col-sm-3">
+                    
                 </div>
                 
             </div>
