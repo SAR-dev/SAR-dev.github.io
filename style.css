@@ -1,17 +1,27 @@
+/*----------------------------------*/
 /*Basic Setup*/
+/*----------------------------------*/
 
-html,body {
+html,
+body {
     height: 100%;
     width: 100%;
     font-family: 'Open Sans';
 }
 
-.top-heading p{width: 100%; text-align: center; font-size: 70px; text-transform: capitalize;}
+.top-heading p {
+    width: 100%;
+    text-align: center;
+    font-size: 70px;
+    text-transform: capitalize;
+}
 
+/*----------------------------------*/
 /*NavBar Setup*/
+/*----------------------------------*/
 
 .vocalog-nav {
-    background-color:rgba(1, 55, 118, 0.65) !important;
+    background-color: rgba(1, 55, 118, 0.65) !important;
 }
 
 .vocalog-nav .nav-link {
@@ -44,11 +54,13 @@ html,body {
     color: white;
 }
 
+/*----------------------------------*/
 /*Cover Setup*/
+/*----------------------------------*/
 
 #home {
-    background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(118, 117, 117, 0.03)),to(rgba(18, 18, 18, 0.72))), url(img/miku00.jpg);
-    background-image: linear-gradient(rgba(118, 117, 117, 0.03),rgba(18, 18, 18, 0.72)), url(img/miku00.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(118, 117, 117, 0.03)), to(rgba(18, 18, 18, 0.72))), url(img/miku00.jpg);
+    background-image: linear-gradient(rgba(118, 117, 117, 0.03), rgba(18, 18, 18, 0.72)), url(img/miku00.jpg);
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
@@ -76,14 +88,17 @@ html,body {
 
 .explore-button {
     font-weight: 500;
-    
+
 }
 
-
+/*----------------------------------*/
 /*What is this place*/
+/*----------------------------------*/
+
 .whatIsThis {
     margin-bottom: 15%;
 }
+
 .whatIsThis-heading {
     width: 100%;
     text-align: center;
@@ -92,17 +107,21 @@ html,body {
     font-weight: 700;
 }
 
-.card001, .card002, .card003 {
+.card001,
+.card002,
+.card003 {
     text-align: center;
     border: none;
     border-radius: 0px 30px 0px 30px;
-    -webkit-box-shadow: -19px 19px 43px 0px rgba(0,0,0,0.61);
-    box-shadow: -19px 19px 43px 0px rgba(0,0,0,0.61);
+    -webkit-box-shadow: -19px 19px 43px 0px rgba(0, 0, 0, 0.61);
+    box-shadow: -19px 19px 43px 0px rgba(0, 0, 0, 0.61);
     margin: 10px;
     height: 300px;
 }
 
-.card001:hover, .card002:hover, .card003:hover {
+.card001:hover,
+.card002:hover,
+.card003:hover {
     background-color: rgba(188, 188, 188, 0.24);
     -webkit-transition: .5s;
     transition: .5s;
@@ -125,8 +144,9 @@ html,body {
     color: #9d9d9d;
 }
 
-
+/*----------------------------------*/
 /*Vocaloid*/
+/*----------------------------------*/
 
 .vocaloidSection-heading {
     width: 100%;
@@ -146,25 +166,27 @@ html,body {
     font-size: 35px;
     padding-top: 25px;
     font-weight: 600;
-    
+
 }
 
 .miku-image-para {
     color: grey;
     font-size: 17px;
     text-align: justify;
-    
+
 }
 
 .miku-image {
     border-radius: 0px 30px;
 }
 
+/*----------------------------------*/
 /*Live Concert*/
+/*----------------------------------*/
 
 .liveConcertSection {
-    background-image:-webkit-gradient(linear,left top, left bottom,from(rgba(77, 77, 77, 0.99)),to(rgba(54, 54, 54, 0.46))), url(img/miku03.jpg);
-    background-image:linear-gradient(rgba(62, 62, 62, 0.99),rgba(54, 54, 54, 0.55)), url(img/miku03.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(77, 77, 77, 0.99)), to(rgba(54, 54, 54, 0.46))), url(img/miku03.jpg);
+    background-image: linear-gradient(rgba(62, 62, 62, 0.99), rgba(54, 54, 54, 0.55)), url(img/miku03.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-position: center center;
@@ -186,8 +208,9 @@ html,body {
     font-size: 25px;
 }
 
-
+/*----------------------------------*/
 /*Join Us*/
+/*----------------------------------*/
 
 .join-us {
     text-align: center;
@@ -230,8 +253,9 @@ html,body {
     display: block;
 }
 
-
+/*----------------------------------*/
 /*Contact Us*/
+/*----------------------------------*/
 
 .contactUsSection {
     background-color: #2c3e50;
@@ -245,15 +269,19 @@ html,body {
     font-weight: 700;
 }
 
-
+/*----------------------------------*/
 /*Footer*/
+/*----------------------------------*/
+
 footer {
     background-color: #1f1f1f;
     color: white;
     font-size: 12px;
 }
 
+/*----------------------------------*/
 /*Animation*/
+/*----------------------------------*/
 
 @-webkit-keyframes color-change {
     0% {
@@ -267,18 +295,33 @@ footer {
     80% {
         border-color: #2ed573;
     }
-    
+
     100% {
         border-color: #46a3fd;
     }
 }
 
+/*----------------------------------*/
 /*Media Query*/
+/*----------------------------------*/
+/*
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { ... }
 
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) { ... }
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) { ... }
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) { ... }
+
+// Extra large devices (large desktops)
+// No media query since the extra-large breakpoint has no upper bound on its width
+*/
 @media only screen and (max-width: 600px) {
     .join-us-image img {
         width: 250px;
     }
-} 
-
-
+}
