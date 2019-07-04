@@ -164,7 +164,7 @@ html,body {
 
 .liveConcertSection {
     background-image:-webkit-gradient(linear,left top, left bottom,from(rgba(77, 77, 77, 0.99)),to(rgba(54, 54, 54, 0.46))), url(img/miku03.jpg);
-    background-image:linear-gradient(rgba(77, 77, 77, 0.99),rgba(54, 54, 54, 0.46)), url(img/miku03.jpg);
+    background-image:linear-gradient(rgba(62, 62, 62, 0.99),rgba(54, 54, 54, 0.55)), url(img/miku03.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-position: center center;
@@ -176,9 +176,9 @@ html,body {
 }
 
 .liveConcertSection-para p {
-    font-size: 16px;
+    font-size: 18px;
     text-align: center;
-    line-height: 35px;
+    line-height: 30px;
     color: #ffffff;
 }
 
