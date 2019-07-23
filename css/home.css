@@ -65,8 +65,8 @@ body {
 /*---------------------------*/
 
 #colorstrip-a{
-    border-bottom: 30px solid #dfe4ea;
-    box-shadow: 0px 2px 2px 2px grey;  
+    border-bottom: 30px solid #ffffff;
+    box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.33);
 }
 
 .leftNewsSection h5 {
@@ -84,7 +84,7 @@ body {
 /*----White Border----*/
 .newsSection {
     border: 1px solid #ced6e0;
-    box-shadow: 0px 2px 2px 2px grey;
+    box-shadow: 10px 10px 35px -35px rgba(0,0,0,0.75);
     font-family: Open Sans, sans-serif;
 }
 /*-------------------*/
