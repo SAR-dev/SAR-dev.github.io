@@ -58,6 +58,11 @@ html {
     text-transform: capitalize;
 }
 
+@media (max-width: 575.98px) {
+    .top-heading p {
+        font-size: 50px;
+    }
+}
 /*----------------------------------*/
 /*NavBar Setup*/
 /*----------------------------------*/
@@ -96,7 +101,15 @@ html {
 /*----------------------------------*/
 /*Cover Setup*/
 /*----------------------------------*/
-
+@media (max-width: 575.98px) {
+    .home-text .home-text-heading {
+        font-size: 30px;
+    }
+    .explore-button {
+        font-size: 14px;
+        padding: 15px 25px;
+    }
+}
 #home {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(118, 117, 117, 0.03)), to(rgba(18, 18, 18, 0.72))), url(../img/miku00.jpg);
     background-image: linear-gradient(rgba(118, 117, 117, 0.03), rgba(18, 18, 18, 0.72)), url(../img/miku00.jpg);
@@ -131,11 +144,15 @@ html {
 .explore-button {
     letter-spacing: 1px;
     color: white;
-    border: 2px solid white;
+    border: 2px solid #8425ac;
     border-radius: 5px;
+    background-color: #8425ac;
+    padding: 20px 50px;
 }
 .explore-button:hover {
-    background-color: white;
+    background-color: #7c0bac;
+    color: white;
+    border: 2px solid #7c0bac;
 }
 /*----------------------------------*/
 /*What is this place*/
@@ -182,7 +199,11 @@ html {
     font-weight: 500;
     color: #2c3e50;
 }
-
+@media (max-width: 575.98px) {
+    .card .card-text {
+    font-size: 14px
+    }
+}
 /*----------------------------------*/
 /*Vocaloid*/
 /*----------------------------------*/
@@ -200,8 +221,8 @@ html {
     font-size: 35px;
     padding-top: 25px;
     font-weight: 600;
-
 }
+
 
 .miku-image-para {
     color: #2c3e50;
@@ -209,6 +230,11 @@ html {
     text-align: justify;
     font-weight: 500;
     font-family: 'Source Sans Pro', sans-serif;
+}
+@media (max-width: 575.98px) {
+    .miku-image-para {
+        font-size: 16px;
+    }
 }
 
 .miku-image {
@@ -235,44 +261,58 @@ html {
 .liveConcertSection-para p {
     font-size: 18px;
     text-align: center;
-    line-height: 30px;
     color: #ffffff;
     font-weight: 400;
     letter-spacing: 1px;
 }
-
+@media (max-width: 575.98px) {
+    .liveConcertSection-para p {
+        font-size: 16px;
+    }
+}
 /*----------------------------------*/
 /*Join Us section*/
 /*----------------------------------*/
 
-.join-us h1 {
-    font-weight: 800;
-    color: rgba(142, 142, 142, 0.52);
+.join-us p {
+    color: #2f3640;
     font-weight: 900;
-    text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222, 0 8px 0 #202020, 0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a, 0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414, 0 15px 0 #121212, 0 22px 30px rgba(0, 0, 0, 0.9);
 }
 
 .join-us a {
     text-decoration: none;
     margin-top: 20px;
-    font-size: 35px;
-    background-color: #2c3e50;
+    font-size: 25px;
+    background-color: #2f3640;
     font-weight: 600;
     padding: 10px 20px;
     border-radius: 10px;
     color: white;
 }
-
-
-.join-us {
-    background-image: -webkit-gradient(linear, left bottom, right top, from(#f5f6fa), color-stop(#f3f5f9), color-stop(#f1f4f7), color-stop(#eff3f5), color-stop(#eef2f3), color-stop(#eef2f3), color-stop(#eef2f3), color-stop(#eef2f3), color-stop(#eff3f5), color-stop(#f1f4f7), color-stop(#f3f5f9), to(#f5f6fa));
-    background-image: linear-gradient(to right top, #f5f6fa, #f3f5f9, #f1f4f7, #eff3f5, #eef2f3, #eef2f3, #eef2f3, #eef2f3, #eff3f5, #f1f4f7, #f3f5f9, #f5f6fa);
-}
-
 .btn-signup {
-    -webkit-box-shadow: 5px 5px 15px 5px #34495e;
-    box-shadow: 5px 5px 15px 5px #34495e;
+	box-shadow: 3px 4px 0px 0px rgba(53, 59, 72, 0.64);
+	background-color:#2f3640;
+	border-radius:18px;
+	border:1px solid #424242;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:7px 25px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #303030;
 }
+	
+}
+.btn-signup:hover {
+	background-color:#1a1a1a;
+}
+.btn-signup:active {
+	position:relative;
+	top:1px;
+}
+
 /*----------------------------------*/
 /*Footer*/
 /*----------------------------------*/
