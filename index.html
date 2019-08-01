@@ -8,18 +8,17 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    
-    <!-- External CSS -->
-    <link rel="stylesheet" type="text/css" href="style.css">
     
     <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/b05f942afb.js"></script>
+    
+    <!-- External CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     
     <!-- Google Fonts (Open Sans)-->
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900|Montserrat:400,600,800,900|Open+Sans:400,600,700,800|Raleway:400,600,800,900|Roboto:400,500,700,900|Source+Sans+Pro:400,600,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900|Open+Sans:400,600|Raleway:400,500,600,700,800,900|Source+Sans+Pro:400,600&display=swap" rel="stylesheet">
 
-    <link rel="shortcut icon" href="img/favicon.png" />
+    <link rel="shortcut icon" href="img/favicon.png"/>
     <title>VOCAlog</title>
 </head>
 
@@ -27,35 +26,30 @@
 
     <!-- Navbar Starts -->
 
-    <nav class="navbar navbar-expand-lg vocalog-nav fixed-top">
-        <div id="active">
-            <a class="navbar-brand nav-link" href="#">VOCALog</a>
-        </div>
+    <nav class="navbar navbar-expand-md justify-content-center vocalog-nav fixed-top">
+       
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span> <i class="fa fa-bars"></i> </span>
+            <span class="my-2"> <strong id="vocalogbar">VOCAlog</strong> </span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="pages/home.html">Home</a>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item mx-2 active">
+                    <a class="nav-link px-3 py-1" href="#"><i class="fas fa-home"></i>Home</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="pages/dev/news.html">News</a>
+                <li class="nav-item mx-2">
+                    <a class="nav-link px-3 py-1" href="pages/news.html"><i class="fas fa-rss-square"></i>News</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="pages/dev/gallery.html">Gallery</a>
+                <li class="nav-item mx-2">
+                    <a class="nav-link px-3 py-1" href="pages/gallery.html"><i class="fas fa-camera"></i>Gallery</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="pages/dev/library.html">Library</a>
+                <li class="nav-item mx-2">
+                    <a class="nav-link px-3 py-1" href="#"><i class="fas fa-book-reader"></i>Library</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="pages/dev/shop.html">Shop</a>
+                <li class="nav-item mx-2">
+                    <a class="nav-link px-3 py-1" href="#"><i class="fas fa-shopping-basket"></i>Shop</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="pages/signup.html">Sign Up</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="pages/signin.html">Sign In</a>
+                <li class="nav-item mx-2">
+                    <a class="nav-link px-3 py-1" href="#"><i class="fas fa-user-secret"></i>Join Us</a>
                 </li>
 
             </ul>
@@ -71,7 +65,7 @@
         <div class="home-text">
             <p class="home-text-heading">Welcome to VOCAlog</p>
             <p class="home-text-para d-none d-sm-block">Be a part of this global family and spread the awesomeness of VOCALOID</p>
-            <a href="pages/home.html" class="btn btn-lg btn-outline-light explore-button">EXPLORE</a>
+            <a href="pages/news.html" class="btn explore-button px-5 py-3 my-3">EXPLORE</a>
         </div>
     </div>
 
@@ -81,19 +75,20 @@
     <!-- What Is This Page Starts -->
 
     <div class="container-fluid whatIsThis">
-        <div class="container mb-8">
+        <div class="container py-5">
 
-            <div class="row mt-5 whatIsThis-heading">
-                <div class="col-md-12">
+            <div class="row pt-5 whatIsThis-heading">
+                <div class="col-md-12 top-heading">
                     <p>What Is This Place?</p>
                 </div>
             </div>
 
-            <div class="row mt-5 mb-5">
+            <div class="row my-5">
 
                 <div class="col-md-4">
                     <div class="card card001">
-                        <i class="fas fa-users"></i>
+                       <div class="mt-4"></div>
+                        <i class="fas fa-shopping-cart m-auto"></i>
                         <div class="card-body">
                             <div class="card-title">Shop</div>
                             <div class="card-text">Browse our Vocaloid Shop section for awesome products! Earn VOCA Points! Free shipping on qualifying orders and products. Shop now! We're awaiting your order! (￣▽￣)</div>
@@ -103,7 +98,8 @@
 
                 <div class="col-md-4">
                     <div class="card card002">
-                        <i class="fas fa-cloud-upload-alt"></i>
+                       <div class="mt-4"></div>
+                        <i class="fas fa-cloud-upload-alt  m-auto"></i>
                         <div class="card-body">
                             <div class="card-title">Update</div>
                             <div class="card-text">You will get the latest updates about vocaloid software, concerts, figurines of vocaloid singers and many more. You can also send us articles.</div>
@@ -114,7 +110,8 @@
 
                 <div class="col-md-4">
                     <div class="card card003">
-                        <i class="fas fa-users"></i>
+                       <div class="mt-4"></div>
+                        <i class="fas fa-database m-auto"></i>
                         <div class="card-body">
                             <div class="card-title">Information</div>
                             <div class="card-text">We have a huge collection of various informations in our Library and huge photo collection of figurines and fan arts in our Gallery about the vocaloids.</div>
@@ -134,8 +131,8 @@
     <div class="container-fluid pt-5 pb-5 vocaloidSection">
         <div class="container">
 
-            <div class="row mt-5 top-heading vocaloidSection-heading">
-                <div class="col-md-12">
+            <div class="row my-5">
+                <div class="col-md-12 top-heading">
                     <p>What Is Vocaloid?</p>
                 </div>
             </div>
@@ -176,9 +173,9 @@
 
     <div class="container-fluid liveConcertSection">
 
-        <div class="container pt-5 pb-5">
-            <div class="row top-heading mt-5">
-                <div class="col-md-12 liveConcertSection-heading">
+        <div class="container py-5">
+            <div class="row top-heading mt-5 mx-md-5 justify-content-center">
+                <div class="col-md-10 col-sm-12 col-12 liveConcertSection-heading">
                     <p>What Is Hatsune Miku?</p>
                 </div>
                 <div class="col-md-12 p-5 liveConcertSection-para">
@@ -197,16 +194,12 @@
 
     <!--  Join Us Starts -->
     
-    <div class="container-fluid">
-        <div class="container mt-5 mb-5">
-            <div class="row p-5">
-                <div class="col-sm-12 col-md-12 col-lg-6 mb-4 join-us-image">
-                    <img src="img/join%20us.gif">
-                </div>
-                <div class="col-sm-12 col-md-12 col-lg-6 join-us">
-                    <p class="join-us-header">Want To Be Part Of This Family?</p>
-                    <p class="join-us-para">Join Us Today</p>
-                    <a href="pages/signup.html" class="btn btn-lg">Sign Up</a>
+    <div class="container-fluid join-us">
+        <div class="container py-5">
+            <div class="row text-center p-5">
+                <div class="col-12">
+                    <h1 class="my-5 display-3">Want To Be Part Of This Family?</h1>
+                    <a href="pages/joinus.html" class="btn btn-lg px-5 btn-dark my-3 btn-signup">Join Us</a>
                 </div>
             </div>
         </div>
@@ -214,79 +207,23 @@
 
     <!--  Join Us Ends -->
 
-    <!--  Contact Us Starts -->
-
-    <div class="container-fluid contactUsSection">
-        <div class="container mt-5">
-            <div class="row pt-5 pb-5">
-                <div class="col-md-12 mt-5 mb-5 contactUsSection-heading">
-                    <p>Contact Us</p>
-                </div>
-                
-                <div class="col-sm-3">
-                    
-                </div>
-                
-                <div class="col-sm-6 mt-3 mb-3">
-                    <form method="post" action="https://formspree.io/sayedarrafi.bd@gmail.com">
-                       
-                        <div class="form-group"> 
-                            <div class="row">
-                            <div class="col">
-                              <input type="text" class="form-control" placeholder="First name" name="First name">
-                            </div>
-                            <div class="col">
-                              <input type="text" class="form-control" placeholder="Last name" name="Last name">
-                            </div>
-                            </div>
-                          </div>
-
-                        <div class="form-group"> 
-                            <input type="email" class="form-control" id="exampleFormControlInput1" name="E-mail address" placeholder="*E-mail Address">
-                        </div>
-
-                        <div class="form-group">                   
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="6" name="Message" placeholder="*Message for Us"></textarea>
-                        </div>
-                        
-                        <div class="form-group">
-                            <button class="btn btn-lg btn-primary" type="submit">Submit</button>
-                        </div>
-                        
-                    </form>
-                </div>
-                
-                <div class="col-sm-3">
-                    
-                </div>
-                
-            </div>
-        </div>
-    </div>
-
-    <!--  Contact Us Ends -->
-
+    
     <!--  Footer Starts  -->
 
     <footer class="container-fluid">
-        <div class="container pt-3 pb-3">
-            <div class="row">
-                <div class="col-md-4"></div>
+        <div class="container">
+            <div class="row py-3 justify-content-center">     
                 <div class="col-md-4 text-center">Copyright &copy; 2019 | vocalog@outlook.com </div>
-                <div class="col-md-4"></div>
             </div>
         </div>
     </footer>
 
     <!--  Footer Ends   -->
 
-
-
-
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body></html>

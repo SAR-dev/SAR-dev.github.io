@@ -1,0 +1,432 @@
+/*----------------------------------*/
+/*Basic Setup*/
+/*----------------------------------*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Raleway', sans-serif;
+}
+
+.btn-primary {
+    background-color: #1D809F !important;
+    border-color: #1D809F !important;
+    color: #fff !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+    background-color: #155d74 !important;
+    border-color: #155d74 !important;
+}
+
+.btn-secondary {
+    background-color: #ecb807 !important;
+    border-color: #ecb807 !important;
+    color: #fff !important;
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus,
+.btn-secondary:active {
+    background-color: #ba9106 !important;
+    border-color: #ba9106 !important;
+}
+
+.btn-dark {
+    color: #fff !important;
+}
+
+.btn {
+    -webkit-box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.1);
+    font-weight: 700;
+}
+
+
+.top-heading p {
+    width: 100%;
+    font-weight: 800;
+    text-align: center;
+    font-size: 70px;
+    text-transform: capitalize;
+}
+
+/*----------------------------------*/
+/*NavBar Setup*/
+/*----------------------------------*/
+
+.vocalog-nav {
+    background-color: #2f3542 !important;
+}
+
+.vocalog-nav .nav-link {
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+.active a {
+    color: #00a8ff !important;
+}
+
+.navbar-brand {
+    letter-spacing: 2px;
+}
+.active a .fa-rss-square, .active a .fa-camera, .active a .fa-book-reader, .active a .fa-shopping-basket, .active a .fa-home, .active a .fa-user-secret {
+    color: #00a8ff !important;
+}
+.fa-rss-square, .fa-camera, .fa-book-reader, .fa-shopping-basket, .fa-home, .fa-user-secret {
+    color: white;
+    font-size: 20px;
+}
+.fa-rss-square, .fa-camera, .fa-book-reader, .fa-shopping-basket, .fa-home, .fa-user-secret {
+    margin: 0 8px 0 0;
+}
+#vocalogbar {
+    color: white;
+    letter-spacing: 2px;
+}
+/*----------------------------------*/
+/*Cover Setup*/
+/*----------------------------------*/
+
+#home {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(118, 117, 117, 0.03)), to(rgba(18, 18, 18, 0.72))), url(../img/miku00.jpg);
+    background-image: linear-gradient(rgba(118, 117, 117, 0.03), rgba(18, 18, 18, 0.72)), url(../img/miku00.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+    background-position: center center;
+}
+
+.home-text {
+    position: absolute;
+    top: 35%;
+    text-align: center;
+    width: 100%;
+    color: white;
+}
+
+.home-text-heading {
+    font-size: 70px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-shadow: rgb(255, 255, 255, .1) 3px 5px 2px;
+}
+
+.home-text-para {
+    font-size: 30px;
+    text-transform: capitalize;
+    text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
+}
+
+.explore-button {
+    letter-spacing: 1px;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+.explore-button:hover {
+    background-color: white;
+}
+/*----------------------------------*/
+/*What is this place*/
+/*----------------------------------*/
+.whatIsThis {
+    background-image: -webkit-gradient(linear, left bottom, right top, from(#f5f6fa), color-stop(#f3f5f9), color-stop(#f1f4f7), color-stop(#eff3f5), color-stop(#eef2f3), color-stop(#eef2f3), color-stop(#eef2f3), color-stop(#eef2f3), color-stop(#eff3f5), color-stop(#f1f4f7), color-stop(#f3f5f9), to(#f5f6fa));
+    background-image: linear-gradient(to right top, #f5f6fa, #f3f5f9, #f1f4f7, #eff3f5, #eef2f3, #eef2f3, #eef2f3, #eef2f3, #eff3f5, #f1f4f7, #f3f5f9, #f5f6fa);
+}
+
+.card001,
+.card002,
+.card003 {
+    text-align: center;
+    border: none;
+    border-radius: 0px 30px 0px 30px;
+    -webkit-box-shadow: -19px 19px 43px 0px rgba(0, 0, 0, 0.61);
+    box-shadow: -19px 19px 43px 0px rgba(0, 0, 0, 0.61);
+    margin: 10px;
+    height: 300px;
+}
+
+.card001:hover,
+.card002:hover,
+.card003:hover {
+    background-color: rgba(188, 188, 188, 0.35);
+    -webkit-transition: .5s;
+    transition: .5s;
+    cursor: -webkit-grab;
+    cursor: grab;
+}
+
+.card .fa-shopping-cart, .card .fa-cloud-upload-alt, .card .fa-database {
+    color: #3e3e3e;
+    font-size: 40px;
+}
+
+.card .card-title {
+    font-weight: 800;
+    font-size: 25px;
+    color: #353b48;
+}
+
+.card .card-text {
+    font-weight: 500;
+    color: #2c3e50;
+}
+
+/*----------------------------------*/
+/*Vocaloid*/
+/*----------------------------------*/
+.vocaloidSection {
+    background-image: -webkit-gradient(linear, left bottom, right top, from(#f5f6fa), color-stop(#f3f5f9), color-stop(#f1f4f7), color-stop(#eff3f5), color-stop(#eef2f3), color-stop(#eef2f3), color-stop(#eef2f3), color-stop(#eef2f3), color-stop(#eff3f5), color-stop(#f1f4f7), color-stop(#f3f5f9), to(#f5f6fa));
+    background-image: linear-gradient(to right top, #f5f6fa, #f3f5f9, #f1f4f7, #eff3f5, #eef2f3, #eef2f3, #eef2f3, #eef2f3, #eff3f5, #f1f4f7, #f3f5f9, #f5f6fa);
+}
+
+.vocaloidSection .top-heading {
+    color: #022c24;
+}
+
+.miku-image-heading {
+    color: #2c3e50;
+    font-size: 35px;
+    padding-top: 25px;
+    font-weight: 600;
+
+}
+
+.miku-image-para {
+    color: #2c3e50;
+    font-size: 18px;
+    text-align: justify;
+    font-weight: 500;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.miku-image {
+    border-radius: 0px 30px;
+}
+
+/*----------------------------------*/
+/*Live Concert*/
+/*----------------------------------*/
+
+.liveConcertSection {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(118, 117, 117, 0.5)), to(rgba(18, 18, 18, 0.75))), url(../img/miku03.jpg);
+    background-image: linear-gradient(rgba(118, 117, 117, 0.5), rgba(18, 18, 18, 0.75)), url(../img/miku03.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+.liveConcertSection-heading {
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.liveConcertSection-para p {
+    font-size: 18px;
+    text-align: center;
+    line-height: 30px;
+    color: #ffffff;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+/*----------------------------------*/
+/*Join Us section*/
+/*----------------------------------*/
+
+.join-us h1 {
+    font-weight: 800;
+    color: rgba(142, 142, 142, 0.52);
+    font-weight: 900;
+    text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222, 0 8px 0 #202020, 0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a, 0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414, 0 15px 0 #121212, 0 22px 30px rgba(0, 0, 0, 0.9);
+}
+
+.join-us a {
+    text-decoration: none;
+    margin-top: 20px;
+    font-size: 35px;
+    background-color: #2c3e50;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: white;
+}
+
+
+.join-us {
+    background-image: -webkit-gradient(linear, left bottom, right top, from(#f5f6fa), color-stop(#f3f5f9), color-stop(#f1f4f7), color-stop(#eff3f5), color-stop(#eef2f3), color-stop(#eef2f3), color-stop(#eef2f3), color-stop(#eef2f3), color-stop(#eff3f5), color-stop(#f1f4f7), color-stop(#f3f5f9), to(#f5f6fa));
+    background-image: linear-gradient(to right top, #f5f6fa, #f3f5f9, #f1f4f7, #eff3f5, #eef2f3, #eef2f3, #eef2f3, #eef2f3, #eff3f5, #f1f4f7, #f3f5f9, #f5f6fa);
+}
+
+.btn-signup {
+    -webkit-box-shadow: 5px 5px 15px 5px #34495e;
+    box-shadow: 5px 5px 15px 5px #34495e;
+}
+/*----------------------------------*/
+/*Footer*/
+/*----------------------------------*/
+
+footer {
+    background-color: #1f1f1f;
+    color: white;
+    font-size: 12px;
+}
+
+
+/*---------------------------------*/
+/*News*/
+/*---------------------------------*/
+.content {
+    cursor:pointer;
+}
+.news {
+    background-image: -webkit-gradient(linear, left bottom, right top, from(#ecf0f1), color-stop(#f0f3f4), color-stop(#f4f5f7), color-stop(#f7f8fa), color-stop(#fbfbfc), color-stop(#fbfbfc), color-stop(#fbfbfc), color-stop(#fbfbfc), color-stop(#f7f8fa), color-stop(#f4f5f7), color-stop(#f0f3f4), to(#ecf0f1));
+    background-image: linear-gradient(to right top, #ecf0f1, #f0f3f4, #f4f5f7, #f7f8fa, #fbfbfc, #fbfbfc, #fbfbfc, #fbfbfc, #f7f8fa, #f4f5f7, #f0f3f4, #ecf0f1);
+}
+
+.news a {
+    text-decoration: none;
+}
+.news h4 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 900;
+    text-transform:uppercase;
+    letter-spacing: 1px;
+}
+.news h5 {
+    font-size: 20px;
+    color: rgb(41, 128, 185);
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+    text-shadow: 0px 3px 3px rgba(200,200,200,0.5);
+}
+.news p {
+    font-size: 14px;
+    color: #34495e;
+    font-family: 'Open Sans', sans-serif;
+}
+#newsSection .image p {
+    font-size: 14px;
+}
+
+#newsSection .image img {
+    min-height: 200px;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+#hallOfMyths p {
+    font-size: 12px;
+}
+/*------------------------------*/
+/*Admin*/
+/*------------------------------*/
+
+.admin .form-control, #admin-form button {
+    margin-top: 15px;
+}
+.adminhr {
+    border: 3px solid #27ae60;
+}
+.admin .fa-trash-alt {
+    font-size: 25px;
+}
+
+/*-----------------------------------*/
+/*Gallery*/
+/*-----------------------------------*/
+
+#gallery img {
+    height: 250px;
+    width: 250px;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+/*-----------------------------------*/
+/*Join Us Sign Up In*/
+/*-----------------------------------*/
+
+.sign-up-in {
+    min-height: 100vh;
+}
+
+.sign-up-in input {
+    color: #2c3e50;
+    font-weight: 600;
+}
+.sign-up-in .input-group-text {
+    font-weight: 800;
+}
+
+.sign-up-in .button {
+    background-color: #f1c40f;
+    border-radius: 3px;
+    margin: 0;
+}
+.button button {
+    background-color: #f1c40f;
+    padding: 5px 83px;
+    border: 0;
+    font-size: 18px;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 1px
+}
+.active-tab {
+    background-color: #ffa502 !important;
+}
+
+/*----------------------------------*/
+/*Animation*/
+/*----------------------------------*/
+/*
+@-webkit-keyframes color-change {
+    0% {
+        border-color: #ced6e0;
+    }
+
+    40% {
+        border-color: #1e90ff;
+    }
+
+    80% {
+        border-color: #2ed573;
+    }
+
+    100% {
+        border-color: #46a3fd;
+    }
+}
+*/
+
+/*----------------------------------*/
+/*Media Query*/
+/*----------------------------------*/
+/*
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { ... }
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) { ... }
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) { ... }
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) { ... }
+
+// Extra large devices (large desktops)
+// No media query since the extra-large breakpoint has no upper bound on its width
+*/

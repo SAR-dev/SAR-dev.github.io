@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+    <!-----------  ----------->
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/b05f942afb.js"></script>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+
+    <!-- Google Fonts (Open Sans)-->
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900|Open+Sans:400,600|Raleway:400,500,600,700,800,900|Source+Sans+Pro:400,600&display=swap" rel="stylesheet">
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-firestore.js"></script>
+
+    <link rel="shortcut icon" href="../img/favicon.png" />
+    <title>VOCAlog | News</title>
+</head>
+
+<body>
+    <!-- Navbar Starts -->
+
+    <nav class="navbar navbar-expand-md justify-content-center vocalog-nav">
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="my-2"> <strong id="vocalogbar">VOCAlog</strong> </span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item mx-2">
+                    <a class="nav-link px-4" href="#"><i class="fas fa-home"></i>Home</a>
+                </li>
+                <li class="nav-item mx-2 active">
+                    <a class="nav-link px-4" href="#"><i class="fas fa-rss-square"></i>News</a>
+                </li>
+                <li class="nav-item mx-2">
+                    <a class="nav-link px-4" href="gallery.html"><i class="fas fa-camera"></i>Gallery</a>
+                </li>
+                <li class="nav-item mx-2">
+                    <a class="nav-link px-4" href="#"><i class="fas fa-book-reader"></i>Library</a>
+                </li>
+                <li class="nav-item mx-2">
+                    <a class="nav-link px-4" href="#"><i class="fas fa-shopping-basket"></i>Shop</a>
+                </li>
+                <li class="nav-item mx-2">
+                    <a class="nav-link px-4" href="#"><i class="fas fa-user-secret"></i>Join Us</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Navbar Ends -->
+
+    <div class="container">
+        <div class="row news">
+            
+            <div class="col-lg-9 col-md-12 col-sm-12 col-12">
+                <div class="container" id="newsSection">
+
+                    <!-- Contents from JS goes here -->
+
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-12 col-sm-12 col-12">
+<!--                <h4 class="text-center py-1 text-success">Hall Of Myths</h4>-->
+
+                <div id="hallOfMyths">
+                   
+                    <div class="col-12 my-4 content">
+                       <a href="https://www.youtube.com/watch?v=shs0rAiwsGQ" target="_blank">
+                        <img src="https://i.imgur.com/etoncA2.png" class="shadow p-3 bg-white rounded img-fluid">
+                        <div class="text-center my-3">
+                            <h6 class="text-success font-weight-bold">千本桜 (Senbonzakura)</h6>
+                            <p class="my-0"><strong class="pr-1">Featuring:</strong>Hatsune Miku</p>
+                            <p class="my-0"><strong class="pr-1">Producers:</strong>Kurousa-P (music, lyrics), Hajime (guitar), Ittomaru (illust), Mienohito (video)</p>
+                        </div>
+                        </a>
+                    </div>
+                    
+                    <div class="col-12 my-4 content">
+                       <a href="https://www.youtube.com/watch?v=ZB75e7vzX0I" target="_blank">
+                        <img src="https://i.imgur.com/UrJnkAj.png" class="shadow p-3 bg-white rounded img-fluid">
+                        <div class="text-center my-3">
+                            <h6 class="text-success font-weight-bold">ワールズエンド・ダンスホール (World's End Dancehall)</h6>
+                            <p class="my-0"><strong class="pr-1">Featuring:</strong>Hatsune Miku &amp; Megurine Luka</p>
+                            <p class="my-0"><strong class="pr-1">Producers:</strong>wowaka (music, lyrics, illustration, video)</p>
+                        </div>
+                        </a>
+                    </div>
+                    
+                    <div class="col-12 my-4 content">
+                       <a href="https://www.youtube.com/watch?v=DnLFVUi3oOU" target="_blank">
+                        <img src="https://i.imgur.com/HzvD1iE.png" class="shadow p-3 bg-white rounded img-fluid">
+                        <div class="text-center my-3">
+                            <h6 class="text-success font-weight-bold">モザイクロール (Mozaik Role)</h6>
+                            <p class="my-0"><strong class="pr-1">Featuring:</strong>GUMI</p>
+                            <p class="my-0"><strong class="pr-1">Producers:</strong>DECO*27 (music, lyrics), akka (illustration), mirto (video)</p>
+                        </div>
+                        </a>
+                    </div>
+                    
+                    <div class="col-12 my-4 content">
+                       <a href="https://www.nicovideo.jp/watch/sm1715919" target="_blank">
+                        <img src="https://i.imgur.com/AfVOJBa.png" class="shadow p-3 bg-white rounded img-fluid">
+                        <div class="text-center my-3">
+                            <h6 class="text-success font-weight-bold">メルト (Melt)</h6>
+                            <p class="my-0"><strong class="pr-1">Featuring:</strong>Hatsune Miku</p>
+                            <p class="my-0"><strong class="pr-1">Producers:</strong>ryo (music, lyrics), 119 (illust)</p>
+                        </div>
+                        </a>
+                    </div>
+                    
+                    <div class="col-12 my-4 content">
+                       <a href="https://www.youtube.com/watch?v=HOz-9FzIDf0" target="_blank">
+                        <img src="https://i.imgur.com/xR8htfp.png" class="shadow p-3 bg-white rounded img-fluid">
+                        <div class="text-center my-3">
+                            <h6 class="text-success font-weight-bold">マトリョシカ (Matryoshka)</h6>
+                            <p class="my-0"><strong class="pr-1">Featuring:</strong>GUMI and Hatsune Miku</p>
+                            <p class="my-0"><strong class="pr-1">Producers:</strong>Hachi (music, lyrics, illustration, video)</p>
+                        </div>
+                        </a>
+                    </div>
+                    
+                    <div class="col-12 my-4 content">
+                       <a href="#" target="_blank">
+                        <img src="https://i.imgur.com/APd7eEC.png?1" class="shadow p-3 bg-white rounded img-fluid">
+                        <div class="text-center my-3">
+                            <h6 class="text-success font-weight-bold">みくみくにしてあげる♪ (Miku Miku ni Shite Ageru♪)</h6>
+                            <p class="my-0"><strong class="pr-1">Featuring:</strong>Hatsune Miku</p>
+                            <p class="my-0"><strong class="pr-1">Producers:</strong>ika (music, lyrics, video), KEI (illustration)</p>
+                        </div>
+                        </a>
+                    </div>
+                    
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!--  Footer Starts  -->
+
+    <footer class="container-fluid">
+        <div class="container">
+            <div class="row py-3 justify-content-center">
+                <div class="col-md-4 text-center">Copyright &copy; 2019 | vocalog@outlook.com </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--  Footer Ends   -->
+
+
+
+    <!-- Firebase -->
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyBYjD7-EBtlOLoeb6G5g8EqASc-FIMs1c8",
+            authDomain: "vocalog-68274.firebaseapp.com",
+            databaseURL: "https://vocalog-68274.firebaseio.com",
+            projectId: "vocalog-68274",
+            storageBucket: "vocalog-68274.appspot.com",
+            messagingSenderId: "808503735663",
+            appId: "1:808503735663:web:c8e051828101adfe"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        const db = firebase.firestore();
+    </script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="../js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body></html>
