@@ -1,43 +1,11 @@
 @import 'sizing';
+@import 'redefault';
 
 $sm: 600px;
 $md: 992px;
 $lg: 1200px;
 
 $gray-white: #ecf0f1;
-
-.container-fluid {
-    max-width: $lg;
-    margin: auto;
-}
-
-.w-100 {
-    width: 100%;
-}
-
-.modal {
-    top: 2% !important;
-    height: 95vh !important;
-    max-height: 95vh !important;
-}
-
-.border-round {
-    border-radius: 0 5px 5px 0;
-}
-
-.menu {
-    position: fixed;
-    left: 20px;
-    top: 20px;
-}
-
-.heading {
-    h1 {
-        font-weight: 500;
-        color: rgba(0, 0, 0, 0.8);
-        text-shadow: 3px 2px 3px rgba(255, 255, 255, .2);
-    }
-}
 
 #head {
     @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap');
@@ -202,17 +170,6 @@ $gray-white: #ecf0f1;
 
 #footer {
     margin-top: -20px;
-}
-
-.welcome {
-    position: absolute;
-    top: 30%;
-    left: 25px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 600;
-    letter-spacing: 1px;
-    color: #FFFFFF;
-    text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, .1), 0 0 5px rgba(0, 0, 0, .1), 0 1px 3px rgba(0, 0, 0, .3), 0 3px 5px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .2), 0 20px 20px rgba(0, 0, 0, .15);
 }
 
 #home {

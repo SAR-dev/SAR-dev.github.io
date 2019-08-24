@@ -1,0 +1,46 @@
+.container-fluid {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.modal {
+    top: 2% !important;
+    height: 95vh !important;
+    max-height: 95vh !important;
+}
+
+.border-round {
+    border-radius: 0 5px 5px 0;
+}
+
+.menu {
+    position: fixed;
+    left: 20px;
+    top: 20px;
+}
+
+.heading {
+    h1 {
+        font-weight: 500;
+        color: rgba(0, 0, 0, 0.8);
+        text-shadow: 3px 2px 3px rgba(255, 255, 255, .2);
+    }
+}
+
+.floating-menu {
+    position: absolute;
+    top: 400px;
+    left: 0px
+}
+
+.hide {
+    display: none;
+}
+
+.newscontent {
+    display: none;
+}

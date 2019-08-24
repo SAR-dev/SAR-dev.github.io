@@ -1,3 +1,14 @@
+$(function () {
+    $("#load").click(function (e) { // click event for load more
+        e.preventDefault();
+        $(".newscontent:hidden").slice(0, 8).show(); // select next 10 hidden divs and show them
+        if ($(".newscontent:hidden").length == 0) { // check if any hidden divs still exist
+            $("#load").addClass('hide'); // alert if there are none left
+        }
+    });
+});
+
+
 //// Your web app's Firebase configuration
 var firebaseConfig = {
     apiKey: "AIzaSyBYjD7-EBtlOLoeb6G5g8EqASc-FIMs1c8",
@@ -25,7 +36,7 @@ let renderNews = (content, id) => {
     let time = formatDate(content.time.toDate());
 
     let newshtmldata =
-        `<div class="col s12 l6 my-2">
+        `<div class="col s12 l6 my-2 newscontent">
             <div class="row mx-1 z-depth-1 border-round grey lighten-4">
                 <div class="col s4 p-2 news-image">
                     <img src="${image}" class="materialboxed p-1">
@@ -51,6 +62,7 @@ let renderNews = (content, id) => {
         </div>`;
     news.innerHTML += newshtmldata;
     $('.modal').modal();
+    $(".newscontent").slice(0, 8).show();
 }
 //convert date
 function formatDate(date) {
