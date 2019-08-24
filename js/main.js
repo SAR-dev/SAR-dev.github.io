@@ -3,4 +3,5 @@ $(document).ready(function () {
     $('.parallax').parallax();
     $('.materialboxed').materialbox();
     $('.modal').modal();
+    $('.tooltipped').tooltip();
 });
