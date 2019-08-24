@@ -134,8 +134,9 @@ $gray-white: #ecf0f1;
     }
 
     h4 {
-        color: #343232;
-        text-shadow: -1px -1px 1px rgba(217, 217, 217, 0.1), 1px 1px 1px rgba(0, 0, 0, .5);
+        text-transform: uppercase;
+        font-weight: 500;
+        letter-spacing: 1px;
     }
 }
 
