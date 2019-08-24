@@ -1471,11 +1471,12 @@
   font-family: 'Roboto', sans-serif; }
   #head .parallax-container {
     letter-spacing: 1px; }
-    #head .parallax-container img {
-      -o-object-position: right;
-      object-position: right;
-      -o-object-fit: cover;
-      object-fit: cover; }
+    @media screen and (max-width: 992px) {
+      #head .parallax-container:nth-child(1) {
+        display: none; } }
+    @media screen and (min-width: 992px) {
+      #head .parallax-container:nth-child(2) {
+        display: none; } }
     #head .parallax-container h1 {
       position: absolute;
       left: 50px;
@@ -1527,7 +1528,8 @@
     transition-timing-function: ease; }
     #what-is-this .content .card:hover {
       -webkit-filter: brightness(0.85);
-      filter: brightness(0.85); }
+      filter: brightness(0.85);
+      cursor: pointer; }
     #what-is-this .content .card .card-title {
       font-size: 2rem;
       margin-bottom: 20px; }
