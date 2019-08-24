@@ -1,229 +1,202 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    
+    <meta charset="UTF-8">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
     <!-- Font Awesome Icons -->
     <script src="https://kit.fontawesome.com/b05f942afb.js"></script>
-    
-    <!-- External CSS -->
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    
-    <!-- Google Fonts (Open Sans)-->
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900|Open+Sans:400,600|Raleway:400,500,600,700,800,900|Source+Sans+Pro:400,600&display=swap" rel="stylesheet">
+    <!--Import Custom CSS-->
+    <link rel="stylesheet" href="css/style.css">
 
-    <link rel="shortcut icon" href="img/favicon.png"/>
-    <title>VOCAlog</title>
+
+    <title>Materialize</title>
 </head>
 
-<body>
-
-    <!-- Navbar Starts -->
-
-    <nav class="navbar navbar-expand-md justify-content-center vocalog-nav fixed-top">
-       
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="my-2"> <strong id="vocalogbar">VOCAlog</strong> </span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item mx-2 active">
-                    <a class="nav-link px-3 py-1" href="#"><i class="fas fa-home"></i>Home</a>
-                </li>
-                <li class="nav-item mx-2">
-                    <a class="nav-link px-3 py-1" href="pages/news.html"><i class="fas fa-rss-square"></i>News</a>
-                </li>
-                <li class="nav-item mx-2">
-                    <a class="nav-link px-3 py-1" href="pages/gallery.html"><i class="fas fa-camera"></i>Gallery</a>
-                </li>
-                <li class="nav-item mx-2">
-                    <a class="nav-link px-3 py-1" href="#"><i class="fas fa-book-reader"></i>Library</a>
-                </li>
-                <li class="nav-item mx-2">
-                    <a class="nav-link px-3 py-1" href="#"><i class="fas fa-shopping-basket"></i>Shop</a>
-                </li>
-                <li class="nav-item mx-2">
-                    <a class="nav-link px-3 py-1" href="pages/joinus.html"><i class="fas fa-user-secret"></i>Join Us</a>
-                </li>
-
-            </ul>
-        </div>
-    </nav>
-
-    <!-- Navbar Ends -->
-
-    <!-- Cover Page Starts -->
-
-    <div id="home">
-
-        <div class="home-text">
-            <p class="home-text-heading">Welcome to VOCAlog</p>
-            <p class="home-text-para d-none d-sm-block">Be a part of this global family and spread the awesomeness of VOCALOID</p>
-            <a href="pages/news.html" class="btn explore-button my-3">EXPLORE</a>
-        </div>
-    </div>
-
-    <!-- Cover Page Ends -->
-
-
-    <!-- What Is This Page Starts -->
-
-    <div class="container-fluid whatIsThis">
-        <div class="container py-5">
-
-            <div class="row pt-5 whatIsThis-heading">
-                <div class="col-md-12 top-heading">
-                    <p>What Is This Place?</p>
+<body class="grey lighten-3">
+    <a class="sidenav-trigger btn-floating pulse pink menu" data-target="mobile-links"><i class="material-icons">menu</i></a>
+    <ul class="sidenav" id="mobile-links">
+        <li>
+            <div class="user-view">
+                <div class="background">
+                    <img src="img/miku02_rotated.png">
                 </div>
+                <a href="#user"><img class="circle" src="img/1560655520173.gif" style="object-fit: cover;"></a>
+                <a href="#name"><span class="white-text name">Vocalog</span></a>
+                <a href="#email"><span class="white-text email">vocalog@outlook.com</span></a>
             </div>
+        </li>
+        <li><a href="#"><i class="material-icons">home</i>Home</a></li>
+        <li><a href="#"><i class="material-icons">book</i>News</a></li>
+        <li><a href="#"><i class="material-icons">image</i>Gallery</a></li>
+        <li><a href="#"><i class="material-icons">music_video</i>Library</a></li>
+        <li><a href="#"><i class="material-icons">people</i>Join Us</a></li>
+    </ul>
 
-            <div class="row my-5">
-
-                <div class="col-md-4">
-                    <div class="card card001">
-                       <div class="mt-4"></div>
-                        <i class="fas fa-shopping-cart m-auto"></i>
-                        <div class="card-body">
-                            <div class="card-title">Shop</div>
-                            <div class="card-text">Browse our Vocaloid Shop section for awesome products! Earn VOCA Points! Free shipping on qualifying orders and products. Shop now! We're awaiting your order! (￣▽￣)</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card card002">
-                       <div class="mt-4"></div>
-                        <i class="fas fa-cloud-upload-alt  m-auto"></i>
-                        <div class="card-body">
-                            <div class="card-title">Update</div>
-                            <div class="card-text">You will get the latest updates about vocaloid software, concerts, figurines of vocaloid singers and many more. You can also send us articles.</div>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card card003">
-                       <div class="mt-4"></div>
-                        <i class="fas fa-database m-auto"></i>
-                        <div class="card-body">
-                            <div class="card-title">Information</div>
-                            <div class="card-text">We have a huge collection of various informations in our Library and huge photo collection of figurines and fan arts in our Gallery about the vocaloids.</div>
-                        </div>
-
-                    </div>
-                </div>
-
+    <section id="head">
+        <div class="parallax-container">
+            <div class="parallax">
+                <img src="img/miku02.png" class="responsive-img">
+                <h1>WELCOME TO<br />VOCALOG</h1>
+                <p class="flow-text">Be A Part Of This Global Family And Spread The Awesomeness Of VOCALOID</p>
             </div>
         </div>
-    </div>
+    </section>
 
-    <!-- What Is This Page Ends -->
-
-    <!-- About Vocaloid Page Starts -->
-
-    <div class="container-fluid pt-5 pb-5 vocaloidSection">
+    <section id="what-is-this">
         <div class="container">
-
-            <div class="row my-5">
-                <div class="col-md-12 top-heading">
-                    <p>What Is Vocaloid?</p>
+            <div class="row heading">
+                <div class="col s12 center-align">
+                    <h1>What Is This Place?</h1>
                 </div>
             </div>
-
-            <div class="row mt-4">
-                <div class="col-sm-6">
-                    <img src="img/miku01.jpg" class="img-fluid miku-image" alt="Hatsune Miku">
+            <div class="row content">
+                <div class="col s12 m4">
+                    <div class="card">
+                        <div class="card-image center-align pt-3">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <div class="card-content">
+                            <p class="card-title center-align">Shop</p>
+                            <p class="center-align">Browse our Vocaloid Shop section for awesome products! Earn VOCA Points! Free shipping on qualifying orders and products. Shop now! We're awaiting your order! (￣▽￣)</p>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="col-sm-6">
-                    <h3 class="miku-image-heading text-center">Vocaloid Software</h3>
-                    <p class="miku-image-para">Vocaloid (ボーカロイド Bōkaroido) is a singing voice synthesizer software. The software enables users to synthesize "singing" by typing in lyrics and melody. <br />It uses synthesizing technology with specially recorded vocals of voice actors or singers. Various voice banks have been released for use with the Vocaloid synthesizer technology. Each is sold as "a singer in a box" designed to act as a replacement for an actual singer. <br /> As such, they are released under a moe anthropomorphism. These avatars are also referred to as Vocaloids, and are often marketed as virtual idols.</p>
-                </div>
-            </div>
-
-
-            <div class="row mt-4">
-
-                <div class="col-sm-6 order-md-12">
-                    <img src="img/miku02.jpg" class="img-fluid miku-image" alt="Hatsune Miku">
-                </div>
-
-                <div class="col-sm-6 order-md-1">
-                    <h3 class="miku-image-heading text-center">Vocaloid Singer</h3>
-                    <p class="miku-image-para">A VOCALOID refers heavily to an illustrated character of a VOCALOID-powered voicebank.<br />The marketing of a vocalist varies by company and some companies may provide their vocalist with a basic profile, backstory, or personality that the consumer can work with. The illustration of a vocalist has no effect on the software and is done purely for decorative purposes.
-                        <br />In order for a product to be classified as a "VOCALOID", there should be acknowledgment by the YAMAHA Corporation under their licensing terms and there is a VOCALOID™-powered vocal in development or fully released.</p>
+                <div class="col s12 m4">
+                    <div class="card">
+                        <div class="card-image center-align pt-3">
+                            <i class="fas fa-cloud-upload-alt"></i>
+                        </div>
+                        <div class="card-content">
+                            <p class="card-title center-align">Update</p>
+                            <p class="center-align">You will get the latest updates about vocaloid software, concerts, figurines of vocaloid singers and many more. You can also send us articles.</p>
+                        </div>
+                    </div>
                 </div>
 
-            </div>
-
-        </div>
-
-    </div>
-
-    <!--  About Vocaloid Page Ends  -->
-
-    <!--  Concert Section Starts  -->
-
-    <div class="container-fluid liveConcertSection">
-
-        <div class="container py-5">
-            <div class="row top-heading mt-5 mx-md-5 justify-content-center">
-                <div class="col-md-10 col-sm-12 col-12 liveConcertSection-heading">
-                    <p>Hatsune Miku !?!</p>
-                </div>
-                <div class="col-md-12 p-md-5 liveConcertSection-para">
-                    <p>Hatsune Miku is the most famous Vocaloid singer, a 16 year-old blue-haired girl with a unique voice and prodigious energy.<br/>
-                    <br/>
-                    What makes her special is that she is not a human singer, but a virtual persona who uses a computer-generated voice and 3D graphics to perform on stage. With a repertoire entirely provided by individual creators, she is the first truly crowd-created virtual talent. But being virtual doesn't stop her from filling up concert halls, or teaming up with major artists like Lady Gaga and Pharrell Williams!<br/>
-
-                    <br/>Internationally popular, with over millions of followers on Facebook, the increasing demand for concerts overseas paved the way to Miku Expo, a world tour that has so far taken her from Indonesia to Los Angeles, New York and Shanghai, with a memorable TV stop at the David Letterman show.</p>
+                <div class="col s12 m4">
+                    <div class="card">
+                        <div class="card-image center-align pt-3">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <div class="card-content">
+                            <p class="card-title center-align">Information</p>
+                            <p class="center-align">We have a huge collection of various informations in our Library and huge photo collection of figurines and fan arts in our Gallery about the vocaloids.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+    </section>
 
-    </div>
-
-    <!--  Concert Section Ends  -->
-
-    <!--  Join Us Starts -->
-    
-    <div class="container-fluid join-us">
-        <div class="container py-5">
-            <div class="row text-center">
-                <div class="col-12 top-heading">
-                    <p class="my-5">Want To Be Part Of This Family?</p>
-                    <a href="pages/joinus.html" class="btn btn-lg px-5 btn-dark my-3 btn-signup">Join Us</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!--  Join Us Ends -->
-
-    
-    <!--  Footer Starts  -->
-
-    <footer class="container-fluid">
+    <section id="what-is-voc">
         <div class="container">
-            <div class="row py-3 justify-content-center">     
-                <div class="col-md-4 text-center">Copyright &copy; 2019 | vocalog@outlook.com </div>
+            <div class="row heading">
+                <div class="col s12 center-align">
+                    <h1>What Is Vocaloid?</h1>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col s12 m6">
+                    <img src="img/miku05.jpg" class="responsive-img z-depth-2" alt="">
+                </div>
+                <div class="col s12 m6 px-2">
+                    <h4 class="center-align mt-0">Vocaloid Software</h4>
+                    <p>Vocaloid (ボーカロイド Bōkaroido) is a singing voice synthesizer software. The software enables users to synthesize "singing" by typing in lyrics and melody.<br />
+                        It uses synthesizing technology with specially recorded vocals of voice actors or singers. Various voice banks have been released for use with the Vocaloid synthesizer technology. Each is sold as "a singer in a box" designed to act as a replacement for an actual singer.<br />
+                        As such, they are released under a moe anthropomorphism. These avatars are also referred to as Vocaloids, and are often marketed as virtual idols.</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col s12 m6 push-m6">
+                    <img src="img/miku07.jpg" class="responsive-img z-depth-2" alt="">
+                </div>
+                <div class="col s12 m6 px-2 pull-m6">
+                    <h4 class="center-align mt-0">Vocaloid Singer</h4>
+                    <p>A VOCALOID refers heavily to an illustrated character of a VOCALOID-powered voicebank.<br />
+                        The marketing of a vocalist varies by company and some companies may provide their vocalist with a basic profile, backstory, or personality that the consumer can work with. The illustration of a vocalist has no effect on the software and is done purely for decorative purposes.<br />
+                        In order for a product to be classified as a "VOCALOID", there should be acknowledgment by the YAMAHA Corporation under their licensing terms and there is a VOCALOID™-powered vocal in development or fully released.</p>
+                </div>
             </div>
         </div>
-    </footer>
+    </section>
 
-    <!--  Footer Ends   -->
+    <section id="hatsune-miku">
+        <div class="parallax-container z-depth-2">
+            <div class="parallax"><img src="img/miku08.jpg"></div>
+        </div>
+    </section>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="js/script.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-</body></html>
+    <section id="join-us">
+        <div class="row py-3 teal darken-3">
+            <div class="container">
+                <div class="col s12 l8 offset-l2">
+                    <div class="row white-text">
+                        <h1 class="mb-5 ml-3">Join Us</h1>
+                        <form class="col s12">
+                            <div class="row">
+                                <div class="input-field col s6">
+                                    <i class="material-icons prefix">account_circle</i>
+                                    <input id="first_name" type="text" class="validate">
+                                    <label for="first_name">First Name</label>
+                                </div>
+                                <div class="input-field col s6">
+                                    <input id="last_name" type="text" class="validate">
+                                    <label for="last_name">Last Name</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <i class="material-icons prefix">portrait</i>
+                                    <input id="username" type="text" class="validate">
+                                    <label for="username">Username</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <i class="material-icons prefix">email</i>
+                                    <input id="email" type="email" class="validate">
+                                    <label for="email">Email</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <i class="material-icons prefix">security</i>
+                                    <input id="password" type="password" class="validate">
+                                    <label for="password">Password</label>
+                                </div>
+                            </div>
+                        </form>
+
+                        <button class="btn-large white waves-effect waves-teal teal-text text-darken-3 ml-3">
+                            <span>Submit</span>
+                            <i class="material-icons right">send</i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="footer">
+        <div class="row grey darken-4 white-text center-align py-3">
+            © 2014 Copyright | vocalog@outlook.com
+        </div>
+    </section>
+    <!--Import jQuery-->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <!--Import Materialize afetr jQuery-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <!--Import Custom JS-->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

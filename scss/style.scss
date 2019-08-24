@@ -1,0 +1,177 @@
+@import 'sizing';
+
+$sm: 600px;
+$md: 992px;
+$lg: 1200px;
+
+$gray-white: #ecf0f1;
+
+.menu {
+    position: fixed;
+    left: 20px;
+    top: 20px;
+}
+
+.heading {
+    h1 {
+        font-weight: 500;
+        color: rgba(0, 0, 0, 0.8);
+        text-shadow: 3px 2px 3px rgba(255, 255, 255, .2);
+    }
+}
+
+#head {
+    @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap');
+    font-family: 'Roboto', sans-serif;
+
+    .parallax-container {
+        letter-spacing: 1px;
+
+        img {
+            object-position: right;
+            object-fit: cover;
+        }
+
+        h1 {
+            @media screen and (min-width: $md) {
+                font-size: 5rem;
+                line-height: 7rem;
+                color: $gray-white;
+            }
+
+            @media screen and (max-width: $md) {
+                display: none;
+            }
+
+            position: absolute;
+            left: 50px;
+            top: 80px;
+            font-weight: 300;
+            text-align: center;
+        }
+
+        p {
+            @media screen and (min-width: $md) {
+                color: $gray-white;
+            }
+
+            @media screen and (max-width: $md) {
+                display: none;
+            }
+
+            position: absolute;
+            left: 50px;
+            top: 300px;
+            font-weight: 300;
+            text-align: center;
+            max-width: 500px;
+        }
+
+    }
+
+}
+
+#what-is-this {
+    margin-bottom: 75px;
+
+    .heading {
+
+        @media screen and (min-width: $sm) {
+            margin-top: 50px;
+        }
+    }
+
+    .content {
+        @media screen and (min-width: $sm) {
+            display: flex;
+            margin-top: 50px;
+            margin-bottom: 100px;
+        }
+
+        .card {
+            border-radius: 10px;
+            height: 100%;
+            transition-delay: .2s;
+            transition-timing-function: ease;
+
+            &:hover {
+                filter: brightness(.85)
+            }
+
+            .card-title {
+                font-size: 2rem;
+                margin-bottom: 20px;
+            }
+
+            .card-image {
+                font-size: 3rem;
+            }
+        }
+    }
+}
+
+#what-is-voc {
+    margin-bottom: 75px;
+    text-align: justify;
+
+    .heading {
+        @media screen and (min-width: $sm) {
+            margin-top: 50px;
+        }
+    }
+
+    img {
+        border-radius: 25px 0px;
+        margin-bottom: 25px;
+    }
+
+    h4 {
+        color: #343232;
+        text-shadow: -1px -1px 1px rgba(217, 217, 217, 0.1), 1px 1px 1px rgba(0, 0, 0, .5);
+    }
+}
+
+#join-us {
+
+    h1 {
+        letter-spacing: 2px;
+        font-size: 5rem;
+        font-weight: 300;
+    }
+
+    .input-field label {
+        color: $gray-white;
+    }
+
+    .input-field input[type=text]:focus + label {
+        color: #000;
+    }
+
+    .input-field input[type=text]:focus {
+        border-bottom: 1px solid #000;
+        box-shadow: 0 1px 0 0 #000;
+    }
+
+    .input-field input[type=text].valid {
+        border-bottom: 1px solid #000;
+        box-shadow: 0 1px 0 0 #000;
+    }
+
+    .input-field input[type=text].invalid {
+        border-bottom: 1px solid #000;
+        box-shadow: 0 1px 0 0 #000;
+    }
+
+    .input-field .prefix.active {
+        color: #000;
+    }
+
+    button {
+        font-weight: 600;
+        letter-spacing: 1px;
+    }
+}
+
+#footer {
+    margin-top: -20px;
+}
