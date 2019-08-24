@@ -39,8 +39,8 @@ let renderNews = (content, id) => {
 
                 <div id="${dataid}" class="modal modal-fixed-footer">
                     <div class="modal-content">
-                        <h4>${heading}</h4>
-                        <img src="${image}" class="responsive-img">
+                        <h4 class="mb-3">${heading}</h4>
+                        <img src="${image}" class="responsive-img mb-2" style="width: 100%">
                         ${fullnews}
                     </div>
                     <div class="modal-footer">
@@ -50,6 +50,7 @@ let renderNews = (content, id) => {
             </div>
         </div>`;
     news.innerHTML += newshtmldata;
+    $('.modal').modal();
 }
 //convert date
 function formatDate(date) {

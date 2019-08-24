@@ -1602,51 +1602,54 @@
   margin-top: -20px; }
 
 .welcome {
+  position: absolute;
+  top: 30%;
+  left: 25px;
   font-family: 'Roboto', sans-serif;
   font-weight: 600;
   letter-spacing: 1px;
   color: #FFFFFF;
   text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15); }
 
-#news .news-row {
+#home #news .news-row {
   position: relative; }
 
-#news .news-image {
+#home #news .news-image {
   overflow: hidden; }
-  #news .news-image img {
+  #home #news .news-image img {
     height: 150px;
     -o-object-fit: cover;
     object-fit: cover;
     border-radius: 0 3px 3px 0; }
 
-#news .link {
+#home #news .link {
   text-decoration: none;
   font-size: .9rem;
   line-height: 1rem;
   letter-spacing: .5px;
   font-weight: 500; }
 
-#news .date {
+#home #news .date {
   float: left;
   border-radius: 3px; }
 
-#news .author {
+#home #news .author {
   float: right;
   border-radius: 3px; }
 
-#hall-of-legends .voc-image {
+#home #hall-of-legends .voc-image {
   overflow: hidden; }
-  #hall-of-legends .voc-image img {
+  #home #hall-of-legends .voc-image img {
     width: 100%;
     height: 150px;
     -o-object-fit: cover;
     object-fit: cover; }
 
-#hall-of-legends .info a {
+#home #hall-of-legends .info a {
   text-decoration: none; }
-  #hall-of-legends .info a .title {
+  #home #hall-of-legends .info a .title {
     font-size: 1rem;
     font-weight: 600; }
 
-#hall-of-legends .info p {
+#home #hall-of-legends .info p {
   font-size: .75rem; }
