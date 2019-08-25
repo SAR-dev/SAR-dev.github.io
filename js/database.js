@@ -1,7 +1,7 @@
 $(function () {
     $("#load").click(function (e) { // click event for load more
         e.preventDefault();
-        $(".newscontent:hidden").slice(0, 10).show(); // select next 10 hidden divs and show them
+        $(".newscontent:hidden").slice(0, 9).show(); // select next 10 hidden divs and show them
         if ($(".newscontent:hidden").length == 0) { // check if any hidden divs still exist
             $("#load").addClass('hide'); // alert if there are none left
         }
@@ -36,7 +36,7 @@ let renderNews = (content, id) => {
     let time = formatDate(content.time.toDate());
 
     let newshtmldata =
-        `<div class="col s12 l6 my-2 newscontent">
+        `<div class="col s12 l4 m6 my-2 newscontent">
             <div class="row mx-1 z-depth-1 border-round grey lighten-4">
                 <div class="col s4 p-2 news-image">
                     <img src="${image}" class="materialboxed p-1">
@@ -44,14 +44,13 @@ let renderNews = (content, id) => {
                 <div class="col s8 my-3">
                     <a href="#${dataid}" class="blue-text text-darken-4 modal-trigger link">${heading}</a>
                     <small class="truncate my-2 grey-text text-darken-4">${summary}</small>
-                    <small class="white-text px-2 py-1 blue accent-4 date">${time}</small>
-                    <small class="white-text px-2 py-1 blue accent-4 author">by Sayed Rafi</small>
+                    <small class="white-text px-2 py-1 grey text-lighten-3 date">${time}</small>
+                    <small class="white-text px-2 py-1 grey text-lighten-3 author">by Sayed Rafi</small>
                 </div>
 
                 <div id="${dataid}" class="modal modal-fixed-footer">
                     <div class="modal-content">
                         <h4 class="mb-3">${heading}</h4>
-                        <img src="${image}" class="responsive-img mb-2" style="width: 100%">
                         ${fullnews}
                     </div>
                     <div class="modal-footer">
@@ -63,7 +62,7 @@ let renderNews = (content, id) => {
     news.innerHTML += newshtmldata;
     $('.modal').modal();
     $('.materialboxed').materialbox();
-    $(".newscontent").slice(0, 10).show();
+    $(".newscontent").slice(0, 9).show();
 }
 //convert date
 function formatDate(date) {

@@ -1470,7 +1470,7 @@
   max-height: 95vh !important; }
 
 .border-round {
-  border-radius: 0 5px 5px 0; }
+  border-radius: 5px; }
 
 .menu {
   position: fixed;
@@ -1577,7 +1577,7 @@ html {
     margin-bottom: 25px; }
   #what-is-voc h4 {
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: 700;
     letter-spacing: 1px; }
 
 #join-us h1 {
@@ -1614,7 +1614,9 @@ html {
   letter-spacing: 1px; }
 
 #footer {
-  margin-top: -20px; }
+  margin-top: -20px;
+  font-size: .8rem;
+  letter-spacing: 1px; }
 
 #home #latest-news .news-row {
   position: relative; }
@@ -1625,6 +1627,8 @@ html {
     height: 150px;
     -o-object-fit: cover;
     object-fit: cover;
+    -o-object-position: center;
+    object-position: center;
     border-radius: 0 3px 3px 0; }
 
 #home #latest-news .link {
@@ -1660,11 +1664,15 @@ html {
   font-size: .75rem; }
 
 #carousel .carousel {
-  margin-top: -50px;
-  margin-bottom: -50px; }
+  margin-top: -100px; }
   #carousel .carousel .carousel-item img {
-    width: 300px;
-    height: 200px;
+    width: 400px;
+    height: 300px;
     -o-object-fit: cover;
     object-fit: cover;
-    margin-left: -50px; }
+    margin-left: -50%; }
+    @media screen and (max-width: 600px) {
+      #carousel .carousel .carousel-item img {
+        width: 250px;
+        height: 200px;
+        margin-left: -10%; } }

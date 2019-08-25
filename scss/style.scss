@@ -126,7 +126,7 @@ html {
 
     h4 {
         text-transform: uppercase;
-        font-weight: 500;
+        font-weight: 700;
         letter-spacing: 1px;
     }
 }
@@ -174,11 +174,14 @@ html {
 
 #footer {
     margin-top: -20px;
+    font-size: .8rem;
+    letter-spacing: 1px;
 }
 
 #home {
 
     #latest-news {
+
         .news-row {
             position: relative;
         }
@@ -189,6 +192,7 @@ html {
             img {
                 height: 150px;
                 object-fit: cover;
+                object-position: center;
                 border-radius: 0 3px 3px 0
             }
         }
@@ -243,15 +247,20 @@ html {
 #carousel {
 
     .carousel {
-        margin-top: -50px;
-        margin-bottom: -50px;
+        margin-top: -100px;
 
         .carousel-item {
             img {
-                width: 300px;
-                height: 200px;
+                width: 400px;
+                height: 300px;
                 object-fit: cover;
-                margin-left: -50px;
+                margin-left: -50%;
+
+                @media screen and (max-width: $sm) {
+                    width: 250px;
+                    height: 200px;
+                    margin-left: -10%;
+                }
             }
         }
     }
