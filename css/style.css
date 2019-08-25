@@ -1494,6 +1494,9 @@
 .newscontent {
   display: none; }
 
+html {
+  scroll-behavior: smooth; }
+
 #head {
   font-family: 'Roboto', sans-serif; }
   #head .parallax-container {
@@ -1643,7 +1646,7 @@
   overflow: hidden; }
   #home #hall-of-legends .voc-image img {
     width: 100%;
-    height: 150px;
+    height: 130px;
     -o-object-fit: cover;
     object-fit: cover; }
 

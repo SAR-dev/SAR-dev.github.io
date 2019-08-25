@@ -44,8 +44,8 @@ let renderNews = (content, id) => {
                 <div class="col s8 my-3">
                     <a href="#${dataid}" class="blue-text text-darken-4 modal-trigger link">${heading}</a>
                     <small class="truncate my-2 grey-text text-darken-4">${summary}</small>
-                    <small class="white-text px-2 py-1 yellow darken-4 date">${time}</small>
-                    <small class="white-text px-2 py-1 red author">by Sayed Rafi</small>
+                    <small class="white-text px-2 py-1 blue accent-4 date">${time}</small>
+                    <small class="white-text px-2 py-1 blue accent-4 author">by Sayed Rafi</small>
                 </div>
 
                 <div id="${dataid}" class="modal modal-fixed-footer">
