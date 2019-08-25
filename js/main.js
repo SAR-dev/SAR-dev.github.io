@@ -4,4 +4,5 @@ $(document).ready(function () {
     $('.materialboxed').materialbox();
     $('.modal').modal();
     $('.tooltipped').tooltip();
+    $('.carousel').carousel();
 });

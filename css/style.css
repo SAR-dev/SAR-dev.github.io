@@ -1613,29 +1613,29 @@
 #footer {
   margin-top: -20px; }
 
-#home #news .news-row {
+#home #latest-news .news-row {
   position: relative; }
 
-#home #news .news-image {
+#home #latest-news .news-image {
   overflow: hidden; }
-  #home #news .news-image img {
+  #home #latest-news .news-image img {
     height: 150px;
     -o-object-fit: cover;
     object-fit: cover;
     border-radius: 0 3px 3px 0; }
 
-#home #news .link {
+#home #latest-news .link {
   text-decoration: none;
   font-size: .9rem;
   line-height: 1rem;
   letter-spacing: .5px;
   font-weight: 500; }
 
-#home #news .date {
+#home #latest-news .date {
   float: left;
   border-radius: 3px; }
 
-#home #news .author {
+#home #latest-news .author {
   float: right;
   border-radius: 3px; }
 
@@ -1655,3 +1655,13 @@
 
 #home #hall-of-legends .info p {
   font-size: .75rem; }
+
+#carousel .carousel {
+  margin-top: -50px;
+  margin-bottom: -50px; }
+  #carousel .carousel .carousel-item img {
+    width: 300px;
+    height: 200px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    margin-left: -50px; }

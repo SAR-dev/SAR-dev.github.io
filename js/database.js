@@ -1,7 +1,7 @@
 $(function () {
     $("#load").click(function (e) { // click event for load more
         e.preventDefault();
-        $(".newscontent:hidden").slice(0, 8).show(); // select next 10 hidden divs and show them
+        $(".newscontent:hidden").slice(0, 10).show(); // select next 10 hidden divs and show them
         if ($(".newscontent:hidden").length == 0) { // check if any hidden divs still exist
             $("#load").addClass('hide'); // alert if there are none left
         }
@@ -62,7 +62,8 @@ let renderNews = (content, id) => {
         </div>`;
     news.innerHTML += newshtmldata;
     $('.modal').modal();
-    $(".newscontent").slice(0, 8).show();
+    $('.materialboxed').materialbox();
+    $(".newscontent").slice(0, 10).show();
 }
 //convert date
 function formatDate(date) {
