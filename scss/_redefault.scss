@@ -49,11 +49,19 @@
 .vl {
     border-left: 1px dashed grey;
     height: 100%;
+
+    @media screen and (max-width: $lg) {
+        border: none;
+    }
 }
 
 .vr {
     border-right: 1px dashed grey;
     height: 100%;
+
+    @media screen and (max-width: $lg) {
+        border: none;
+    }
 }
 
 .vt {
