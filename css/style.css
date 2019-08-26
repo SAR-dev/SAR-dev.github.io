@@ -1457,6 +1457,33 @@
   .mx-xl-auto {
     margin-left: auto !important; } }
 
+.fw-100 {
+  font-weight: 100 !important; }
+
+.fw-200 {
+  font-weight: 200 !important; }
+
+.fw-300 {
+  font-weight: 300 !important; }
+
+.fw-400 {
+  font-weight: 400 !important; }
+
+.fw-500 {
+  font-weight: 500 !important; }
+
+.fw-600 {
+  font-weight: 600 !important; }
+
+.fw-700 {
+  font-weight: 700 !important; }
+
+.fw-800 {
+  font-weight: 800 !important; }
+
+.fw-900 {
+  font-weight: 900 !important; }
+
 .container-fluid {
   max-width: 1200px;
   margin: auto; }
@@ -1464,13 +1491,19 @@
 .w-100 {
   width: 100%; }
 
-.modal {
+.w-50 {
+  width: 50%; }
+
+.news-modal {
   top: 2% !important;
   height: 95vh !important;
   max-height: 95vh !important; }
 
+.video-modal {
+  width: 600px; }
+
 .border-round {
-  border-radius: 5px; }
+  border-radius: 15px; }
 
 .menu {
   position: fixed;
@@ -1478,201 +1511,74 @@
   top: 20px;
   z-index: 999; }
 
-.heading h1 {
-  font-weight: 500;
-  color: rgba(0, 0, 0, 0.8);
-  text-shadow: 3px 2px 3px rgba(255, 255, 255, 0.2); }
-
-.floating-menu {
-  position: absolute;
-  top: 450px;
-  left: 5px; }
+.heading-main {
+  letter-spacing: 3px; }
+  @media screen and (max-width: 992px) {
+    .heading-main {
+      font-size: 2rem; } }
 
 .hide {
   display: none; }
 
-.newscontent {
-  display: none; }
+.vl {
+  border-left: 1px dashed grey;
+  height: 100%; }
+
+.vr {
+  border-right: 1px dashed grey;
+  height: 100%; }
+
+.vt {
+  border-top: 1px dashed grey;
+  height: 100%; }
+
+.vb {
+  border-bottom: 1px dashed grey;
+  height: 100%; }
+
+body #latest-comic .card, body #latest-novel .card {
+  max-width: 300px;
+  margin: auto; }
+  body #latest-comic .card .card-image img, body #latest-novel .card .card-image img {
+    height: 200px;
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover; }
+  body #latest-comic .card .card-image span, body #latest-novel .card .card-image span {
+    font-size: 1.2rem; }
+  body #latest-comic .card .card-content span, body #latest-novel .card .card-content span {
+    font-size: .7rem; }
+  body #latest-comic .card .card-action, body #latest-novel .card .card-action {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+
+body #latest-tutorial img, body #latest-art img, body #creative-ideas img {
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: 3px; }
+
+body #latest-update ul li, body #latest-news ul li {
+  min-height: 65px !important;
+  height: 70px; }
 
 html {
   scroll-behavior: smooth; }
 
-#head {
-  font-family: 'Roboto', sans-serif; }
-  #head .parallax-container {
-    letter-spacing: 1px; }
+body #main-carousel .parallax-container {
+  height: 400px; }
+  body #main-carousel .parallax-container .slogan {
+    font-family: 'Roboto', sans-serif;
+    margin-top: 280px;
+    text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15); }
     @media screen and (max-width: 992px) {
-      #head .parallax-container:nth-child(1) {
-        display: none; } }
-    @media screen and (min-width: 992px) {
-      #head .parallax-container:nth-child(2) {
-        display: none; } }
-    #head .parallax-container h1 {
-      position: absolute;
-      left: 50px;
-      top: 80px;
-      font-weight: 300;
-      text-align: center; }
-      @media screen and (min-width: 992px) {
-        #head .parallax-container h1 {
-          font-size: 5rem;
-          line-height: 7rem;
-          color: #ecf0f1; } }
-      @media screen and (max-width: 992px) {
-        #head .parallax-container h1 {
-          display: none; } }
-    #head .parallax-container p {
-      position: absolute;
-      left: 50px;
-      top: 300px;
-      font-weight: 300;
-      text-align: center;
-      max-width: 500px; }
-      @media screen and (min-width: 992px) {
-        #head .parallax-container p {
-          color: #ecf0f1; } }
-      @media screen and (max-width: 992px) {
-        #head .parallax-container p {
-          display: none; } }
+      body #main-carousel .parallax-container .slogan {
+        margin-top: 200px; } }
+    body #main-carousel .parallax-container .slogan h5 {
+      letter-spacing: 4px; }
 
-#what-is-this {
-  margin-bottom: 75px; }
-  @media screen and (min-width: 600px) {
-    #what-is-this .heading {
-      margin-top: 50px; } }
-  @media screen and (min-width: 600px) {
-    #what-is-this .content {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      margin-top: 50px;
-      margin-bottom: 100px; } }
-  #what-is-this .content .card {
-    border-radius: 10px;
-    height: 100%;
-    -webkit-transition-delay: .2s;
-    -o-transition-delay: .2s;
-    transition-delay: .2s;
-    -webkit-transition-timing-function: ease;
-    -o-transition-timing-function: ease;
-    transition-timing-function: ease; }
-    #what-is-this .content .card:hover {
-      -webkit-filter: brightness(0.85);
-      filter: brightness(0.85);
-      cursor: pointer; }
-    #what-is-this .content .card .card-title {
-      font-size: 2rem;
-      margin-bottom: 20px; }
-    #what-is-this .content .card .card-image {
-      font-size: 3rem; }
-
-#what-is-voc {
-  margin-bottom: 75px;
-  text-align: justify; }
-  @media screen and (min-width: 600px) {
-    #what-is-voc .heading {
-      margin-top: 50px; } }
-  #what-is-voc img {
-    border-radius: 25px 0px;
-    margin-bottom: 25px; }
-  #what-is-voc h4 {
-    text-transform: uppercase;
-    font-weight: 700;
-    letter-spacing: 1px; }
-
-#join-us h1 {
-  letter-spacing: 2px;
-  font-size: 5rem;
-  font-weight: 300; }
-
-#join-us .input-field label {
-  color: #ecf0f1; }
-
-#join-us .input-field input[type=text]:focus + label {
-  color: #000; }
-
-#join-us .input-field input[type=text]:focus {
-  border-bottom: 1px solid #000;
-  -webkit-box-shadow: 0 1px 0 0 #000;
-  box-shadow: 0 1px 0 0 #000; }
-
-#join-us .input-field input[type=text].valid {
-  border-bottom: 1px solid #000;
-  -webkit-box-shadow: 0 1px 0 0 #000;
-  box-shadow: 0 1px 0 0 #000; }
-
-#join-us .input-field input[type=text].invalid {
-  border-bottom: 1px solid #000;
-  -webkit-box-shadow: 0 1px 0 0 #000;
-  box-shadow: 0 1px 0 0 #000; }
-
-#join-us .input-field .prefix.active {
-  color: #000; }
-
-#join-us button {
-  font-weight: 600;
-  letter-spacing: 1px; }
-
-#footer {
-  margin-top: -20px;
-  font-size: .8rem;
-  letter-spacing: 1px; }
-
-#home #latest-news .news-row {
-  position: relative; }
-
-#home #latest-news .news-image {
-  overflow: hidden; }
-  #home #latest-news .news-image img {
-    height: 150px;
-    -o-object-fit: cover;
-    object-fit: cover;
-    -o-object-position: center;
-    object-position: center;
-    border-radius: 0 3px 3px 0; }
-
-#home #latest-news .link {
-  text-decoration: none;
-  font-size: .9rem;
-  line-height: 1rem;
-  letter-spacing: .5px;
-  font-weight: 500; }
-
-#home #latest-news .date {
-  float: left;
-  border-radius: 3px; }
-
-#home #latest-news .author {
-  float: right;
-  border-radius: 3px; }
-
-#home #hall-of-legends .voc-image {
-  overflow: hidden; }
-  #home #hall-of-legends .voc-image img {
-    width: 100%;
-    height: 130px;
-    -o-object-fit: cover;
-    object-fit: cover; }
-
-#home #hall-of-legends .info a {
-  text-decoration: none; }
-  #home #hall-of-legends .info a .title {
-    font-size: 1rem;
-    font-weight: 600; }
-
-#home #hall-of-legends .info p {
-  font-size: .75rem; }
-
-#carousel .carousel {
-  margin-top: -100px; }
-  #carousel .carousel .carousel-item img {
-    width: 400px;
-    height: 300px;
-    -o-object-fit: cover;
-    object-fit: cover;
-    margin-left: -50%; }
-    @media screen and (max-width: 600px) {
-      #carousel .carousel .carousel-item img {
-        width: 250px;
-        height: 200px;
-        margin-left: -10%; } }
+@media screen and (min-width: 992px) {
+  body #contact .contact-row {
+    height: 360px; } }

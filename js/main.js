@@ -5,7 +5,5 @@ $(document).ready(function () {
     $('.modal').modal();
     $('.tooltipped').tooltip();
     $('.carousel').carousel();
-    $('.carousel').carousel({
-        'numVisible': 11
-    });
+    $('.slider').slider();
 });

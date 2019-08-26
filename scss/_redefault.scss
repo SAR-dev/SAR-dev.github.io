@@ -1,3 +1,5 @@
+@import 'variable';
+
 .container-fluid {
     max-width: 1200px;
     margin: auto;
@@ -7,14 +9,22 @@
     width: 100%;
 }
 
-.modal {
+.w-50 {
+    width: 50%;
+}
+
+.news-modal {
     top: 2% !important;
     height: 95vh !important;
     max-height: 95vh !important;
 }
 
+.video-modal {
+    width: 600px;
+}
+
 .border-round {
-    border-radius: 5px;
+    border-radius: 15px;
 }
 
 .menu {
@@ -24,24 +34,34 @@
     z-index: 999;
 }
 
-.heading {
-    h1 {
-        font-weight: 500;
-        color: rgba(0, 0, 0, 0.8);
-        text-shadow: 3px 2px 3px rgba(255, 255, 255, .2);
-    }
-}
+.heading-main {
+    letter-spacing: 3px;
 
-.floating-menu {
-    position: absolute;
-    top: 450px;
-    left: 5px
+    @media screen and (max-width: $md) {
+        font-size: 2rem;
+    }
 }
 
 .hide {
     display: none;
 }
 
-.newscontent {
-    display: none;
+.vl {
+    border-left: 1px dashed grey;
+    height: 100%;
+}
+
+.vr {
+    border-right: 1px dashed grey;
+    height: 100%;
+}
+
+.vt {
+    border-top: 1px dashed grey;
+    height: 100%;
+}
+
+.vb {
+    border-bottom: 1px dashed grey;
+    height: 100%;
 }

@@ -1,268 +1,68 @@
 @import 'sizing';
 @import 'redefault';
-
-$sm: 600px;
-$md: 992px;
-$lg: 1200px;
-
-$gray-white: #ecf0f1;
+@import 'inherit';
+@import 'variable';
 
 html {
     scroll-behavior: smooth;
-}
-
-#head {
     @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap');
-    font-family: 'Roboto', sans-serif;
-
-    .parallax-container {
-        letter-spacing: 1px;
-
-        &:nth-child(1) {
-            @media screen and (max-width: $md) {
-                display: none;
-            }
-        }
-
-        &:nth-child(2) {
-            @media screen and (min-width: $md) {
-                display: none;
-            }
-        }
-
-        h1 {
-            @media screen and (min-width: $md) {
-                font-size: 5rem;
-                line-height: 7rem;
-                color: $gray-white;
-            }
-
-            @media screen and (max-width: $md) {
-                display: none;
-            }
-
-            position: absolute;
-            left: 50px;
-            top: 80px;
-            font-weight: 300;
-            text-align: center;
-        }
-
-        p {
-            @media screen and (min-width: $md) {
-                color: $gray-white;
-            }
-
-            @media screen and (max-width: $md) {
-                display: none;
-            }
-
-            position: absolute;
-            left: 50px;
-            top: 300px;
-            font-weight: 300;
-            text-align: center;
-            max-width: 500px;
-        }
-
-    }
-
 }
 
-#what-is-this {
-    margin-bottom: 75px;
+body {
+    #main-carousel {
+        .parallax-container {
+            height: 400px;
 
-    .heading {
+            .slogan {
+                font-family: 'Roboto', sans-serif;
+                margin-top: 280px;
+                text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, .1), 0 0 5px rgba(0, 0, 0, .1), 0 1px 3px rgba(0, 0, 0, .3), 0 3px 5px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .2), 0 20px 20px rgba(0, 0, 0, .15);
 
-        @media screen and (min-width: $sm) {
-            margin-top: 50px;
-        }
-    }
+                @media screen and (max-width: $md) {
+                    margin-top: 200px;
+                }
 
-    .content {
-        @media screen and (min-width: $sm) {
-            display: flex;
-            margin-top: 50px;
-            margin-bottom: 100px;
-        }
-
-        .card {
-            border-radius: 10px;
-            height: 100%;
-            transition-delay: .2s;
-            transition-timing-function: ease;
-
-            &:hover {
-                filter: brightness(.85);
-                cursor: pointer;
+                h5 {
+                    letter-spacing: 4px;
+                }
             }
 
-            .card-title {
-                font-size: 2rem;
-                margin-bottom: 20px;
-            }
-
-            .card-image {
-                font-size: 3rem;
-            }
-        }
-    }
-}
-
-#what-is-voc {
-    margin-bottom: 75px;
-    text-align: justify;
-
-    .heading {
-        @media screen and (min-width: $sm) {
-            margin-top: 50px;
         }
     }
 
-    img {
-        border-radius: 25px 0px;
-        margin-bottom: 25px;
+    #latest-update {
+        @extend %custom-list;
     }
-
-    h4 {
-        text-transform: uppercase;
-        font-weight: 700;
-        letter-spacing: 1px;
-    }
-}
-
-#join-us {
-
-    h1 {
-        letter-spacing: 2px;
-        font-size: 5rem;
-        font-weight: 300;
-    }
-
-    .input-field label {
-        color: $gray-white;
-    }
-
-    .input-field input[type=text]:focus + label {
-        color: #000;
-    }
-
-    .input-field input[type=text]:focus {
-        border-bottom: 1px solid #000;
-        box-shadow: 0 1px 0 0 #000;
-    }
-
-    .input-field input[type=text].valid {
-        border-bottom: 1px solid #000;
-        box-shadow: 0 1px 0 0 #000;
-    }
-
-    .input-field input[type=text].invalid {
-        border-bottom: 1px solid #000;
-        box-shadow: 0 1px 0 0 #000;
-    }
-
-    .input-field .prefix.active {
-        color: #000;
-    }
-
-    button {
-        font-weight: 600;
-        letter-spacing: 1px;
-    }
-}
-
-#footer {
-    margin-top: -20px;
-    font-size: .8rem;
-    letter-spacing: 1px;
-}
-
-#home {
 
     #latest-news {
-
-        .news-row {
-            position: relative;
-        }
-
-        .news-image {
-            overflow: hidden;
-
-            img {
-                height: 150px;
-                object-fit: cover;
-                object-position: center;
-                border-radius: 0 3px 3px 0
-            }
-        }
-
-        .link {
-            text-decoration: none;
-            font-size: .9rem;
-            line-height: 1rem;
-            letter-spacing: .5px;
-            font-weight: 500;
-        }
-
-        .date {
-            float: left;
-            border-radius: 3px;
-        }
-
-        .author {
-            float: right;
-            border-radius: 3px;
-        }
+        @extend %custom-list;
     }
 
-    #hall-of-legends {
-        .voc-image {
-            overflow: hidden;
+    #latest-comic {
+        @extend %card-style;
+    }
 
-            img {
-                width: 100%;
-                height: 130px;
-                object-fit: cover
-            }
-        }
+    #latest-novel {
+        @extend %card-style;
+    }
 
-        .info {
-            a {
-                text-decoration: none;
+    #latest-tutorial {
+        @extend %thumbnail-img;
+    }
 
-                .title {
-                    font-size: 1rem;
-                    font-weight: 600;
-                }
-            }
+    #latest-art {
+        @extend %thumbnail-img;
+    }
 
-            p {
-                font-size: .75rem;
+    #creative-ideas {
+        @extend %thumbnail-img;
+    }
+
+    #contact {
+        .contact-row {
+            @media screen and (min-width: $md) {
+                height: 360px;
             }
         }
     }
-}
-
-#carousel {
-
-    .carousel {
-        margin-top: -100px;
-
-        .carousel-item {
-            img {
-                width: 400px;
-                height: 300px;
-                object-fit: cover;
-                margin-left: -50%;
-
-                @media screen and (max-width: $sm) {
-                    width: 250px;
-                    height: 200px;
-                    margin-left: -10%;
-                }
-            }
-        }
-    }
-
 }
