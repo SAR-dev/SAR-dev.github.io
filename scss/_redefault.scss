@@ -17,6 +17,12 @@
     top: 2% !important;
     height: 95vh !important;
     max-height: 95vh !important;
+    width: 95%;
+
+    @media screen and (min-width: $lg) {
+        width: 75%;
+    }
+
 }
 
 .video-modal {

@@ -1497,7 +1497,11 @@
 .news-modal {
   top: 2% !important;
   height: 95vh !important;
-  max-height: 95vh !important; }
+  max-height: 95vh !important;
+  width: 95%; }
+  @media screen and (min-width: 1200px) {
+    .news-modal {
+      width: 75%; } }
 
 .video-modal {
   width: 600px; }
@@ -1542,49 +1546,61 @@
   border-bottom: 1px dashed grey;
   height: 100%; }
 
-body #latest-comic .card, body #latest-novel .card {
+#latest-comic .card, #latest-novel .card {
   max-width: 300px;
   margin: auto; }
-  body #latest-comic .card .card-image img, body #latest-novel .card .card-image img {
+  #latest-comic .card .card-image img, #latest-novel .card .card-image img {
     height: 200px;
     width: 100%;
     -o-object-fit: cover;
     object-fit: cover; }
-  body #latest-comic .card .card-image span, body #latest-novel .card .card-image span {
+  #latest-comic .card .card-image span, #latest-novel .card .card-image span {
     font-size: 1.2rem; }
-  body #latest-comic .card .card-content span, body #latest-novel .card .card-content span {
+  #latest-comic .card .card-content span, #latest-novel .card .card-content span {
     font-size: .7rem; }
-  body #latest-comic .card .card-action, body #latest-novel .card .card-action {
+  #latest-comic .card .card-action, #latest-novel .card .card-action {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
 
-body #latest-tutorial img, body #latest-art img, body #creative-ideas img {
+#latest-tutorial img, #latest-art img, #creative-ideas img {
   width: 100%;
   height: 200px;
   -o-object-fit: cover;
   object-fit: cover;
   border-radius: 3px; }
 
-body #latest-update ul li, body #latest-news ul li {
+#latest-update ul li, #latest-news ul li {
   min-height: 65px !important;
   height: 70px; }
 
 html {
   scroll-behavior: smooth; }
 
-body #main-carousel .parallax-container {
+#main-carousel .parallax-container {
   height: 400px; }
-  body #main-carousel .parallax-container .slogan {
+  #main-carousel .parallax-container .slogan {
     font-family: 'Roboto', sans-serif;
     margin-top: 280px;
     text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15); }
     @media screen and (max-width: 992px) {
-      body #main-carousel .parallax-container .slogan {
+      #main-carousel .parallax-container .slogan {
         margin-top: 200px; } }
-    body #main-carousel .parallax-container .slogan h5 {
+    #main-carousel .parallax-container .slogan h5 {
       letter-spacing: 4px; }
 
 @media screen and (min-width: 992px) {
-  body #contact .contact-row {
+  #contact .contact-row {
     height: 360px; } }
+
+#comic-list-page .comic img {
+  height: 200px;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover; }
+
+#comic-list-page .comic p {
+  font-size: .8rem; }
+
+#comic-list-page .comic a {
+  font-size: .9rem; }
