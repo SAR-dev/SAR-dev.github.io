@@ -69,18 +69,31 @@ html {
 
     .comic {
 
+        @media screen and (min-width: $md) {
+            margin-left: 100px;
+            margin-right: 100px;
+        }
+
+        @media screen and (min-width: $sm) {
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+
         img {
             height: 200px;
             width: 100%;
             object-fit: cover;
         }
 
-        p {
-            font-size: .8rem;
+        .info {
+            p {
+                font-size: .8rem;
+            }
+
+            a {
+                font-size: .9rem;
+            }
         }
 
-        a {
-            font-size: .9rem;
-        }
     }
 }

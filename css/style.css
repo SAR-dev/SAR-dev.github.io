@@ -1503,9 +1503,6 @@
     .news-modal {
       width: 75%; } }
 
-.video-modal {
-  width: 600px; }
-
 .border-round {
   border-radius: 15px; }
 
@@ -1593,14 +1590,24 @@ html {
   #contact .contact-row {
     height: 360px; } }
 
+@media screen and (min-width: 992px) {
+  #comic-list-page .comic {
+    margin-left: 100px;
+    margin-right: 100px; } }
+
+@media screen and (min-width: 600px) {
+  #comic-list-page .comic {
+    margin-left: 50px;
+    margin-right: 50px; } }
+
 #comic-list-page .comic img {
   height: 200px;
   width: 100%;
   -o-object-fit: cover;
   object-fit: cover; }
 
-#comic-list-page .comic p {
+#comic-list-page .comic .info p {
   font-size: .8rem; }
 
-#comic-list-page .comic a {
+#comic-list-page .comic .info a {
   font-size: .9rem; }

@@ -6,6 +6,7 @@ $(document).ready(function () {
     $('.tooltipped').tooltip();
     $('.carousel').carousel();
     $('.slider').slider();
+    $('.collapsible').collapsible();
 });
 
 window.onscroll = function () {
