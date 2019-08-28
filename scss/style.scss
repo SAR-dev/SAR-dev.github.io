@@ -64,7 +64,7 @@ html {
     .contact-row {
         margin-top: 20px;
 
-        @media screen and (min-width: $sm) {
+        @media screen and (min-width: $md) {
             margin-top: 60px;
         }
     }
