@@ -12,6 +12,8 @@
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
     <!-- Font Awesome Icons -->
     <script src="https://kit.fontawesome.com/b05f942afb.js"></script>
+    <!-- Box Slider CSS -->
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
     <!--Import Custom CSS-->
     <link rel="stylesheet" href="css/style.css">
 
@@ -54,435 +56,373 @@
             </div>
         </div>
     </section>
+
+    <div class="container">
+        <div class="row my-0">
+            <div class="col s12 m12 my-3" style="text-align: center">
+                <button class="btn blue-grey darken-4 px-4 waves-effect waves-light" id="day"><i class="fas fa-sun night"></i></button>
+                <button class="btn blue-grey darken-4 px-4 waves-effect waves-light" id="night" disabled><i class="fas fa-moon night"></i></button>
+            </div>
+        </div>
+    </div>
+
     <div class="container-fluid">
         <div class="row">
 
-            <!-------------------->
-            <!-- Latest Updates -->
-            <!-------------------->
-            <section id="latest-update">
-                <div class="col s12 l6 vl vb vt">
-                    <h3 class="fw-400 center-align teal py-3 z-depth-1 grey-text text-lighten-5 heading-main">LATEST UPDATES</h3>
-                    <ul class="collection z-depth-1">
-                        <li class="collection-item avatar">
-                            <i class="material-icons circle teal">comment</i>
-                            <span class="title">Invade</span>
-                            <p>Realesed its first chapter today</p>
-                            <a href="#!" class="secondary-content"><i class="material-icons teal-text">grade</i></a>
-                        </li>
+            <div class="col s12 m12 l8">
+                <div class="row">
+                    <!-------------------->
+                    <!-- Latest Updates -->
+                    <!-------------------->
+                    <section id="latest-update">
+                        <div class="col s12 m12 vl vb vt vr">
+                            <h3 class="fw-400 center-align teal py-3 z-depth-1 grey-text text-lighten-5 heading-main">LATEST UPDATES</h3>
+                            <ul class="collection z-depth-1">
+                                <li class="collection-item avatar">
+                                    <i class="material-icons circle teal">comment</i>
+                                    <span class="title">Invade</span>
+                                    <p>Realesed its first chapter today</p>
+                                    <a href="#!" class="secondary-content"><i class="material-icons teal-text">grade</i></a>
+                                </li>
 
-                        <li class="collection-item avatar">
-                            <i class="material-icons circle teal">comment</i>
-                            <span class="title">Invade</span>
-                            <p>Realesed its first chapter today</p>
-                            <a href="#!" class="secondary-content"><i class="material-icons teal-text">grade</i></a>
-                        </li>
+                                <li class="collection-item avatar">
+                                    <i class="material-icons circle teal">comment</i>
+                                    <span class="title">Invade</span>
+                                    <p>Realesed its first chapter today</p>
+                                    <a href="#!" class="secondary-content"><i class="material-icons teal-text">grade</i></a>
+                                </li>
 
-                        <li class="collection-item avatar">
-                            <i class="material-icons circle teal">comment</i>
-                            <span class="title">Invade</span>
-                            <p>Realesed its first chapter today</p>
-                            <a href="#!" class="secondary-content"><i class="material-icons teal-text">grade</i></a>
-                        </li>
+                                <li class="collection-item avatar">
+                                    <i class="material-icons circle teal">comment</i>
+                                    <span class="title">Invade</span>
+                                    <p>Realesed its first chapter today</p>
+                                    <a href="#!" class="secondary-content"><i class="material-icons teal-text">grade</i></a>
+                                </li>
 
-                        <li class="collection-item avatar">
-                            <i class="material-icons circle teal">comment</i>
-                            <span class="title">Invade</span>
-                            <p>Realesed its first chapter today</p>
-                            <a href="#!" class="secondary-content"><i class="material-icons teal-text">grade</i></a>
-                        </li>
+                                <li class="collection-item avatar">
+                                    <i class="material-icons circle teal">comment</i>
+                                    <span class="title">Invade</span>
+                                    <p>Realesed its first chapter today</p>
+                                    <a href="#!" class="secondary-content"><i class="material-icons teal-text">grade</i></a>
+                                </li>
 
-                        <li class="collection-item avatar">
-                            <i class="material-icons circle teal">comment</i>
-                            <span class="title">Invade</span>
-                            <p>Realesed its first chapter today</p>
-                            <a href="#!" class="secondary-content"><i class="material-icons teal-text">grade</i></a>
-                        </li>
-                    </ul>
-                </div>
-            </section>
+                                <li class="collection-item avatar">
+                                    <i class="material-icons circle teal">comment</i>
+                                    <span class="title">Invade</span>
+                                    <p>Realesed its first chapter today</p>
+                                    <a href="#!" class="secondary-content"><i class="material-icons teal-text">grade</i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
 
-            <!-------------------->
-            <!-- Latest News -->
-            <!-------------------->
-            <section id="latest-news">
-                <div class="col s12 l6 vl vr vb vt">
-                    <h3 class="fw-400 center-align teal py-3 z-depth-1 grey-text text-lighten-5 heading-main">LATEST NEWS</h3>
-                    <ul class="collection z-depth-1">
-                        <li class="collection-item avatar">
-                            <i class="material-icons circle teal">library_books</i>
-                            <a href="#modal1" class="mt-2 teal grey-text text-lighten-4 pl-3 py-1 truncate border-round mr-5 modal-trigger">The History of AnimeCon Dhaka - Deshi Geek</a>
-                            <a href="#modal1" class="secondary-content mt-1 py-1 modal-trigger"><i class="material-icons teal-text">more</i></a>
+                    <!-------------------->
+                    <!-- Latest Comic -->
+                    <!-------------------->
+                    <section id="latest-comic">
+                        <div class="col s12 m12 vl vr vb">
+                            <h3 class="fw-400 center-align light-blue darken-4 py-3 z-depth-1 grey-text text-lighten-5 heading-main">LATEST COMIC</h3>
+                            <div class="row">
 
-                        </li>
-
-                        <li class="collection-item avatar">
-                            <i class="material-icons circle teal">library_books</i>
-                            <a href="#modal1" class="mt-2 teal grey-text text-lighten-4 pl-3 py-1 truncate border-round mr-5 modal-trigger">The History of AnimeCon Dhaka - Deshi Geek</a>
-                            <a href="#modal1" class="secondary-content mt-1 py-1 modal-trigger"><i class="material-icons teal-text">more</i></a>
-
-                        </li>
-
-                        <li class="collection-item avatar">
-                            <i class="material-icons circle teal">library_books</i>
-                            <a href="#modal1" class="mt-2 teal grey-text text-lighten-4 pl-3 py-1 truncate border-round mr-5 modal-trigger">The History of AnimeCon Dhaka - Deshi Geek</a>
-                            <a href="#modal1" class="secondary-content mt-1 py-1 modal-trigger"><i class="material-icons teal-text">more</i></a>
-
-                        </li>
-
-                        <li class="collection-item avatar">
-                            <i class="material-icons circle teal">library_books</i>
-                            <a href="#modal1" class="mt-2 teal grey-text text-lighten-4 pl-3 py-1 truncate border-round mr-5 modal-trigger">The History of AnimeCon Dhaka - Deshi Geek</a>
-                            <a href="#modal1" class="secondary-content mt-1 py-1 modal-trigger"><i class="material-icons teal-text">more</i></a>
-
-                        </li>
-
-                        <li class="collection-item avatar">
-                            <i class="material-icons circle teal">library_books</i>
-                            <a href="#modal1" class="mt-2 teal grey-text text-lighten-4 pl-3 py-1 truncate border-round mr-5 modal-trigger">The History of AnimeCon Dhaka - Deshi Geek</a>
-                            <a href="#modal1" class="secondary-content mt-1 py-1 modal-trigger"><i class="material-icons teal-text">more</i></a>
-                        </li>
-
-                    </ul>
-                </div>
-            </section>
-
-            <!-------------------->
-            <!-- Latest Comic -->
-            <!-------------------->
-            <section id="latest-comic">
-                <div class="col s12 m12 vl vr vb">
-                    <h3 class="fw-400 center-align light-blue darken-4 py-3 z-depth-1 grey-text text-lighten-5 heading-main">LATEST COMIC</h3>
-                    <div class="row">
-
-                        <div class="col s12 m6 l3 mb-4">
-                            <div class="card z-depth-1">
-                                <div class="card-image">
-                                    <img src="img/03.jpg" class="materialboxed">
-                                    <span class="card-title light-blue darken-4 p-2 w-100 center-align truncate">Shinsekai Yori</span>
-                                    <a href="#" class="halfway-fab btn-floating light-blue darken-1 z-depth-1 center-align fw-600">03</a>
+                                <div class="col s12 m4 mb-4">
+                                    <div class="card z-depth-1">
+                                        <div class="card-image">
+                                            <img src="img/03.jpg" class="materialboxed">
+                                            <span class="card-title light-blue darken-4 p-2 w-100 center-align truncate">Shinsekai Yori</span>
+                                            <a href="#!" class="halfway-fab btn-floating light-blue darken-1 z-depth-1 center-align fw-600 waves-effect waves-light">03</a>
+                                        </div>
+                                        <div class="card-content py-3">
+                                            <p class="valign-wrapper fw-500"><small><i class="material-icons light-blue-text text-darken-4 mr-2">person</i></small>Sayed Rafi</p>
+                                            <span class="valign-wrapper my-1"><i class="material-icons ml-1 mr-3 light-blue-text text-darken-4 tiny">local_offer</i>Slice Of Life, Action, Comedy</span>
+                                            <span class="valign-wrapper my-1"><i class="material-icons ml-1 mr-3 light-blue-text text-darken-4 tiny">library_books</i>Ongoing</span>
+                                            <span class="valign-wrapper my-1"><i class="material-icons ml-1 mr-3 light-blue-text text-darken-4 tiny">pages</i>3 Chapters</span>
+                                        </div>
+                                        <a href="#" class="card-action center-align center-align white-text w-100 btn light-blue darken-4 waves-effect waves-light">START READING</a>
+                                    </div>
                                 </div>
-                                <div class="card-content py-3">
-                                    <p class="valign-wrapper fw-500"><small><i class="material-icons light-blue-text text-darken-4 mr-2">person</i></small>Sayed Rafi</p>
-                                    <span class="valign-wrapper my-1"><i class="material-icons ml-1 mr-3 light-blue-text text-darken-4 tiny">local_offer</i>Slice Of Life, Action, Comedy</span>
-                                    <span class="valign-wrapper my-1"><i class="material-icons ml-1 mr-3 light-blue-text text-darken-4 tiny">library_books</i>Ongoing</span>
-                                    <span class="valign-wrapper my-1"><i class="material-icons ml-1 mr-3 light-blue-text text-darken-4 tiny">pages</i>3 Chapters</span>
+
+                                <div class="col s12 m4 mb-4">
+                                    <div class="card z-depth-1">
+                                        <div class="card-image">
+                                            <img src="img/03.jpg" class="materialboxed">
+                                            <span class="card-title light-blue darken-4 p-2 w-100 center-align truncate">Shinsekai Yori</span>
+                                            <a href="#!" class="halfway-fab btn-floating light-blue darken-1 z-depth-1 center-align fw-600 waves-effect waves-light">03</a>
+                                        </div>
+                                        <div class="card-content py-3">
+                                            <p class="valign-wrapper fw-500"><small><i class="material-icons light-blue-text text-darken-4 mr-2">person</i></small>Sayed Rafi</p>
+                                            <span class="valign-wrapper my-1"><i class="material-icons ml-1 mr-3 light-blue-text text-darken-4 tiny">local_offer</i>Slice Of Life, Action, Comedy</span>
+                                            <span class="valign-wrapper my-1"><i class="material-icons ml-1 mr-3 light-blue-text text-darken-4 tiny">library_books</i>Ongoing</span>
+                                            <span class="valign-wrapper my-1"><i class="material-icons ml-1 mr-3 light-blue-text text-darken-4 tiny">pages</i>3 Chapters</span>
+                                        </div>
+                                        <a href="#" class="card-action center-align center-align white-text w-100 btn light-blue darken-4 waves-effect waves-light">START READING</a>
+                                    </div>
                                 </div>
-                                <div class="card-action center-align py-2 center-align">
-                                    <a href="#" class="white-text mx-0 w-50 btn-small mx-2 light-blue darken-4 waves-effect waves-light">Read</a>
-                                    <a href="#modal1" class="white-text mx-0 w-50 btn-small mx-2 light-blue darken-4 waves-effect waves-light modal-trigger">Summary</a>
+
+                                <div class="col s12 m4 mb-4">
+                                    <div class="card z-depth-1">
+                                        <div class="card-image">
+                                            <img src="img/03.jpg" class="materialboxed">
+                                            <span class="card-title light-blue darken-4 p-2 w-100 center-align truncate">Shinsekai Yori</span>
+                                            <a href="#!" class="halfway-fab btn-floating light-blue darken-1 z-depth-1 center-align fw-600 waves-effect waves-light">03</a>
+                                        </div>
+                                        <div class="card-content py-3">
+                                            <p class="valign-wrapper fw-500"><small><i class="material-icons light-blue-text text-darken-4 mr-2">person</i></small>Sayed Rafi</p>
+                                            <span class="valign-wrapper my-1"><i class="material-icons ml-1 mr-3 light-blue-text text-darken-4 tiny">local_offer</i>Slice Of Life, Action, Comedy</span>
+                                            <span class="valign-wrapper my-1"><i class="material-icons ml-1 mr-3 light-blue-text text-darken-4 tiny">library_books</i>Ongoing</span>
+                                            <span class="valign-wrapper my-1"><i class="material-icons ml-1 mr-3 light-blue-text text-darken-4 tiny">pages</i>3 Chapters</span>
+                                        </div>
+                                        <a href="#" class="card-action center-align center-align white-text w-100 btn light-blue darken-4 waves-effect waves-light">START READING</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-------------------->
+                    <!-- Latest Novel -->
+                    <!-------------------->
+                    <section id="latest-novel">
+                        <div class="col s12 m12 vr vb vl">
+                            <h3 class="fw-400 center-align blue-grey darken-3 py-3 z-depth-1 grey-text text-lighten-5 heading-main">LATEST NOVEL</h3>
+                            <div class="row">
+
+                                <div class="col s12 m4 mb-4">
+                                    <div class="card z-depth-1">
+                                        <div class="card-image">
+                                            <img src="img/03.jpg" class="materialboxed">
+                                            <span class="card-title blue-grey darken-3 p-2 w-100 center-align truncate">Shinsekai Yori</span>
+                                            <a href="#!" class="halfway-fab btn-floating blue-grey darken-1 z-depth-1 center-align fw-600 waves-effect waves-light">03</a>
+                                        </div>
+                                        <div class="card-content py-3">
+                                            <p class="valign-wrapper fw-500"><small><i class="material-icons cyan-text text-darken-4 mr-2">person</i></small>Sayed Rafi</p>
+                                            <span class="valign-wrapper my-1"><i class="material-icons ml-1 mr-3 cyan-text text-darken-4 tiny">local_offer</i>Slice Of Life, Action, Comedy</span>
+                                            <span class="valign-wrapper my-1"><i class="material-icons ml-1 mr-3 cyan-text text-darken-4 tiny">library_books</i>Ongoing</span>
+                                            <span class="valign-wrapper my-1"><i class="material-icons ml-1 mr-3 cyan-text text-darken-4 tiny">pages</i>3 Chapters</span>
+                                        </div>
+                                        <a href="#" class="card-action center-align center-align white-text w-100 btn blue-grey darken-3 waves-effect waves-light">START READING</a>
+                                    </div>
+                                </div>
+
+                                <div class="col s12 m4 mb-4">
+                                    <div class="card z-depth-1">
+                                        <div class="card-image">
+                                            <img src="img/03.jpg" class="materialboxed">
+                                            <span class="card-title blue-grey darken-3 p-2 w-100 center-align truncate">Shinsekai Yori</span>
+                                            <a href="#!" class="halfway-fab btn-floating blue-grey darken-1 z-depth-1 center-align fw-600 waves-effect waves-light">03</a>
+                                        </div>
+                                        <div class="card-content py-3">
+                                            <p class="valign-wrapper fw-500"><small><i class="material-icons cyan-text text-darken-4 mr-2">person</i></small>Sayed Rafi</p>
+                                            <span class="valign-wrapper my-1"><i class="material-icons ml-1 mr-3 cyan-text text-darken-4 tiny">local_offer</i>Slice Of Life, Action, Comedy</span>
+                                            <span class="valign-wrapper my-1"><i class="material-icons ml-1 mr-3 cyan-text text-darken-4 tiny">library_books</i>Ongoing</span>
+                                            <span class="valign-wrapper my-1"><i class="material-icons ml-1 mr-3 cyan-text text-darken-4 tiny">pages</i>3 Chapters</span>
+                                        </div>
+                                        <a href="#" class="card-action center-align center-align white-text w-100 btn blue-grey darken-3 waves-effect waves-light">START READING</a>
+                                    </div>
+                                </div>
+
+                                <div class="col s12 m4 mb-4">
+                                    <div class="card z-depth-1">
+                                        <div class="card-image">
+                                            <img src="img/03.jpg" class="materialboxed">
+                                            <span class="card-title blue-grey darken-3 p-2 w-100 center-align truncate">Shinsekai Yori</span>
+                                            <a href="#!" class="halfway-fab btn-floating blue-grey darken-1 z-depth-1 center-align fw-600 waves-effect waves-light">03</a>
+                                        </div>
+                                        <div class="card-content py-3">
+                                            <p class="valign-wrapper fw-500"><small><i class="material-icons cyan-text text-darken-4 mr-2">person</i></small>Sayed Rafi</p>
+                                            <span class="valign-wrapper my-1"><i class="material-icons ml-1 mr-3 cyan-text text-darken-4 tiny">local_offer</i>Slice Of Life, Action, Comedy</span>
+                                            <span class="valign-wrapper my-1"><i class="material-icons ml-1 mr-3 cyan-text text-darken-4 tiny">library_books</i>Ongoing</span>
+                                            <span class="valign-wrapper my-1"><i class="material-icons ml-1 mr-3 cyan-text text-darken-4 tiny">pages</i>3 Chapters</span>
+                                        </div>
+                                        <a href="#" class="card-action center-align center-align white-text w-100 btn blue-grey darken-3 waves-effect waves-light">START READING</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-------------------->
+                    <!-- Latest Tutorial -->
+                    <!-------------------->
+                    <section id="latest-tutorial">
+                        <div class="col s12 m vl vr vb">
+                            <h3 class="fw-400 center-align grey darken-4 py-3 z-depth-1 grey-text text-lighten-5 heading-main">LATEST TUTORIAL</h3>
+                            <div class="row">
+
+                                <div class="col s12 m4 mb-3">
+                                    <a class="modal-trigger" href="#modal2"><img class="z-depth-1" src="img/tutorial.jpg"></a>
+                                    <p class="py-1 my-0 grey-text text-darken-4 fw-600 truncate"><i class="material-icons"></i>All Eyes On Me ♫ ~ Cover by Victor McKnight</p>
+                                    <p class="my-0 grey-text text-darken-2"><i class="fas fa-play-circle mr-2"></i> Sayed Rafi</p>
+                                </div>
+
+                                <div class="col s12 m4 mb-3">
+                                    <a class="modal-trigger" href="#modal2"><img class="z-depth-1" src="img/tutorial.jpg"></a>
+                                    <p class="py-1 my-0 grey-text text-darken-4 fw-600 truncate"><i class="material-icons"></i>All Eyes On Me ♫ ~ Cover by Victor McKnight</p>
+                                    <p class="my-0 grey-text text-darken-2"><i class="fas fa-play-circle mr-2"></i> Sayed Rafi</p>
+                                </div>
+
+                                <div class="col s12 m4 mb-3">
+                                    <a class="modal-trigger" href="#modal2"><img class="z-depth-1" src="img/tutorial.jpg"></a>
+                                    <p class="py-1 my-0 grey-text text-darken-4 fw-600 truncate"><i class="material-icons"></i>All Eyes On Me ♫ ~ Cover by Victor McKnight</p>
+                                    <p class="my-0 grey-text text-darken-2"><i class="fas fa-play-circle mr-2"></i> Sayed Rafi</p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </section>
+
+                    <!-------------------->
+                    <!-- Latest News -->
+                    <!-------------------->
+                    <section id="latest-news">
+                        <div class="col s12 m12 vl vr">
+                            <h3 class="fw-400 center-align teal py-3 z-depth-1 grey-text text-lighten-5 heading-main">LATEST NEWS</h3>
+                            <ul class="collection z-depth-1">
+                                <li class="collection-item avatar">
+                                    <i class="material-icons circle teal">library_books</i>
+                                    <a href="#modal1" class="mt-2 teal grey-text text-lighten-4 pl-3 py-1 truncate border-round mr-5 modal-trigger">The History of AnimeCon Dhaka - Deshi Geek</a>
+                                    <a href="#modal1" class="secondary-content mt-1 py-1 modal-trigger"><i class="material-icons teal-text">more</i></a>
+
+                                </li>
+
+                                <li class="collection-item avatar">
+                                    <i class="material-icons circle teal">library_books</i>
+                                    <a href="#modal1" class="mt-2 teal grey-text text-lighten-4 pl-3 py-1 truncate border-round mr-5 modal-trigger">The History of AnimeCon Dhaka - Deshi Geek</a>
+                                    <a href="#modal1" class="secondary-content mt-1 py-1 modal-trigger"><i class="material-icons teal-text">more</i></a>
+
+                                </li>
+
+                                <li class="collection-item avatar">
+                                    <i class="material-icons circle teal">library_books</i>
+                                    <a href="#modal1" class="mt-2 teal grey-text text-lighten-4 pl-3 py-1 truncate border-round mr-5 modal-trigger">The History of AnimeCon Dhaka - Deshi Geek</a>
+                                    <a href="#modal1" class="secondary-content mt-1 py-1 modal-trigger"><i class="material-icons teal-text">more</i></a>
+
+                                </li>
+
+                                <li class="collection-item avatar">
+                                    <i class="material-icons circle teal">library_books</i>
+                                    <a href="#modal1" class="mt-2 teal grey-text text-lighten-4 pl-3 py-1 truncate border-round mr-5 modal-trigger">The History of AnimeCon Dhaka - Deshi Geek</a>
+                                    <a href="#modal1" class="secondary-content mt-1 py-1 modal-trigger"><i class="material-icons teal-text">more</i></a>
+
+                                </li>
+
+                                <li class="collection-item avatar">
+                                    <i class="material-icons circle teal">library_books</i>
+                                    <a href="#modal1" class="mt-2 teal grey-text text-lighten-4 pl-3 py-1 truncate border-round mr-5 modal-trigger">The History of AnimeCon Dhaka - Deshi Geek</a>
+                                    <a href="#modal1" class="secondary-content mt-1 py-1 modal-trigger"><i class="material-icons teal-text">more</i></a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </section>
+
+
+                </div>
+            </div>
+
+            <div class="col s12 m12 l4">
+                <div class="row">
+
+                    <section id="arts">
+                        <div class="col s12 m12 vt vr">
+                            <h3 class="fw-400 center-align pink py-3 z-depth-1 grey-text text-lighten-5 heading-main">ARTS</h3>
+
+                            <div class="bxslider">
+                                <div><img src="img/01.jpg" title="Sayed Rafi"></div>
+                                <div><img src="img/02.jpg" title="Sayed Rafi"></div>
+                                <div><img src="img/03.jpg" title="Sayed Rafi"></div>
+                            </div>
+
+                        </div>
+                    </section>
+
+                    <section id="tutorial">
+                        <div class="col s12 m12 vr">
+                            <h3 class="fw-400 center-align orange py-3 z-depth-1 grey-text text-lighten-5 heading-main">Tutorial</h3>
+
+                            <div class="bxslider">
+                                <div><img src="img/01.jpg" title="Sayed Rafi"></div>
+                                <div><img src="img/02.jpg" title="Sayed Rafi"></div>
+                                <div><img src="img/03.jpg" title="Sayed Rafi"></div>
+                            </div>
+
+                        </div>
+                    </section>
+
+                    <!-------------------->
+                    <!-- Contact Info -->
+                    <!-------------------->
+                    <section id="contact">
+                        <div class="col s12 m12 vr">
+
+                            <div class="row purple darken-4 z-depth-1 mx-2 contact-row">
+                                <div class="col s12 m12 center-align">
+                                    <img src="img/logo.png" class="responsive-img my-3" style="height: 100px; border-radius: 50%; border: 5px solid white">
+                                </div>
+
+                                <div class="col s12 m6 l12 mb-4 info">
+                                    <p class="fw-400 pl-4 white-text flow-text">SAYED RAFI</p>
+                                    <p class="fw-400 pl-4 white-text valign-wrapper"><i class="material-icons mr-3">camera</i>Founder &amp; Programmer</p>
+                                    <p class="fw-400 pl-4 white-text valign-wrapper"><i class="material-icons mr-3">contact_phone</i>01521495318</p>
+                                    <p class="fw-400 pl-4 white-text valign-wrapper"><i class="material-icons mr-3">contact_mail</i>sayedarrafi.bd@gmail.com</p>
+                                </div>
+
+                                <div class="col s12 m6 l12 mb-4 info">
+                                    <p class="fw-400 pl-4 white-text flow-text">ASHRAFUL RIBAT</p>
+                                    <p class="fw-400 pl-4 white-text valign-wrapper"><i class="material-icons mr-3">camera</i>Founder</p>
+                                    <p class="fw-400 pl-4 white-text valign-wrapper"><i class="material-icons mr-3">contact_phone</i>01686431392</p>
+                                    <p class="fw-400 pl-4 white-text valign-wrapper"><i class="material-icons mr-3">contact_mail</i>ribat.bilad@gmail.com</p>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col s12 m6 l3 mb-4">
-                            <div class="card z-depth-1">
-                                <div class="card-image">
-                                    <img src="img/03.jpg" class="materialboxed">
-                                    <span class="card-title light-blue darken-4 p-2 w-100 center-align truncate">Shinsekai Yori</span>
-                                    <a href="#" class="halfway-fab btn-floating light-blue darken-1 z-depth-1 center-align fw-600">03</a>
+                        <div class="col s12 m12 vr">
+
+                            <div class="row my-5  purple darken-2 z-depth-1 mx-2 valign-wrapper py-5">
+                                <div class="col s12 m12">
+                                    <p class="white-text valign-wrapper pl-4 fw-600"><i class="fab fa-facebook-square mr-2" style="font-size: 3rem"></i>Visit Our Facebook Page</p>
+                                    <p class="white-text valign-wrapper pl-4 fw-600"><i class="fab fa-twitter-square mr-2" style="font-size: 3rem"></i>Visit Our Twitter Account</p>
+                                    <p class="white-text valign-wrapper pl-4 fw-600"><i class="fab fa-instagram mr-2" style="font-size: 3rem"></i>Visit Us on Instagram</p>
+                                    <p class="white-text valign-wrapper pl-4 fw-600"><i class="fas fa-envelope-square mr-2" style="font-size: 3rem"></i>Contact Us</p>
                                 </div>
-                                <div class="card-content py-3">
-                                    <p class="valign-wrapper fw-500"><small><i class="material-icons light-blue-text text-darken-4 mr-2">person</i></small>Sayed Rafi</p>
-                                    <span class="valign-wrapper my-1"><i class="material-icons ml-1 mr-3 light-blue-text text-darken-4 tiny">local_offer</i>Slice Of Life, Action, Comedy</span>
-                                    <span class="valign-wrapper my-1"><i class="material-icons ml-1 mr-3 light-blue-text text-darken-4 tiny">library_books</i>Ongoing</span>
-                                    <span class="valign-wrapper my-1"><i class="material-icons ml-1 mr-3 light-blue-text text-darken-4 tiny">pages</i>3 Chapters</span>
-                                </div>
-                                <div class="card-action center-align py-2 center-align">
-                                    <a href="#" class="white-text mx-0 w-50 btn-small mx-2 light-blue darken-4 waves-effect waves-light">Read</a>
-                                    <a href="#modal1" class="white-text mx-0 w-50 btn-small mx-2 light-blue darken-4 waves-effect waves-light modal-trigger">Summary</a>
-                                </div>
+                                <p class="flow-text right fw-700 white-text" style="letter-spacing: 8px; writing-mode: tb-rl;">COMICS GHOR</p>
                             </div>
                         </div>
 
-                        <div class="col s12 m6 l3 mb-4">
-                            <div class="card z-depth-1">
-                                <div class="card-image">
-                                    <img src="img/03.jpg" class="materialboxed">
-                                    <span class="card-title light-blue darken-4 p-2 w-100 center-align truncate">Shinsekai Yori</span>
-                                    <a href="#" class="halfway-fab btn-floating light-blue darken-1 z-depth-1 center-align fw-600">03</a>
-                                </div>
-                                <div class="card-content py-3">
-                                    <p class="valign-wrapper fw-500"><small><i class="material-icons light-blue-text text-darken-4 mr-2">person</i></small>Sayed Rafi</p>
-                                    <span class="valign-wrapper my-1"><i class="material-icons ml-1 mr-3 light-blue-text text-darken-4 tiny">local_offer</i>Slice Of Life, Action, Comedy</span>
-                                    <span class="valign-wrapper my-1"><i class="material-icons ml-1 mr-3 light-blue-text text-darken-4 tiny">library_books</i>Ongoing</span>
-                                    <span class="valign-wrapper my-1"><i class="material-icons ml-1 mr-3 light-blue-text text-darken-4 tiny">pages</i>3 Chapters</span>
-                                </div>
-                                <div class="card-action center-align py-2 center-align">
-                                    <a href="#" class="white-text mx-0 w-50 btn-small mx-2 light-blue darken-4 waves-effect waves-light">Read</a>
-                                    <a href="#modal1" class="white-text mx-0 w-50 btn-small mx-2 light-blue darken-4 waves-effect waves-light modal-trigger">Summary</a>
-                                </div>
+                    </section>
+
+                    <section id="chat">
+                        <div class="col s12 m12 vr">
+                            <div style="text-align: center">
+                                <script id="cid0020000226284491913" data-cfasync="false" async src="//st.chatango.com/js/gz/emb.js" style="width: 300px;height: 350px;">
+                                    {
+                                        "handle": "comicsghor",
+                                        "arch": "js",
+                                        "styles": {
+                                            "a": "ffcc00",
+                                            "b": 100,
+                                            "c": "000000",
+                                            "d": "000000",
+                                            "k": "ffcc00",
+                                            "l": "ffcc00",
+                                            "m": "ffcc00",
+                                            "p": "10",
+                                            "q": "ffcc00",
+                                            "r": 100,
+                                            "cnrs": "0.35"
+                                        }
+                                    }
+
+                                </script>
                             </div>
                         </div>
+                    </section>
 
-                        <div class="col s12 m6 l3 mb-4">
-                            <div class="card z-depth-1">
-                                <div class="card-image">
-                                    <img src="img/03.jpg" class="materialboxed">
-                                    <span class="card-title light-blue darken-4 p-2 w-100 center-align truncate">Shinsekai Yori</span>
-                                    <a href="#" class="halfway-fab btn-floating light-blue darken-1 z-depth-1 center-align fw-600">03</a>
-                                </div>
-                                <div class="card-content py-3">
-                                    <p class="valign-wrapper fw-500"><small><i class="material-icons light-blue-text text-darken-4 mr-2">person</i></small>Sayed Rafi</p>
-                                    <span class="valign-wrapper my-1"><i class="material-icons ml-1 mr-3 light-blue-text text-darken-4 tiny">local_offer</i>Slice Of Life, Action, Comedy</span>
-                                    <span class="valign-wrapper my-1"><i class="material-icons ml-1 mr-3 light-blue-text text-darken-4 tiny">library_books</i>Ongoing</span>
-                                    <span class="valign-wrapper my-1"><i class="material-icons ml-1 mr-3 light-blue-text text-darken-4 tiny">pages</i>3 Chapters</span>
-                                </div>
-                                <div class="card-action center-align py-2 center-align">
-                                    <a href="#" class="white-text mx-0 w-50 btn-small mx-2 light-blue darken-4 waves-effect waves-light">Read</a>
-                                    <a href="#modal1" class="white-text mx-0 w-50 btn-small mx-2 light-blue darken-4 waves-effect waves-light modal-trigger">Summary</a>
-                                </div>
-                            </div>
-                        </div>
 
-                    </div>
                 </div>
-            </section>
-
-            <!-------------------->
-            <!-- Latest Novel -->
-            <!-------------------->
-            <section id="latest-novel">
-                <div class="col s12 m12 vl vr vb">
-                    <h3 class="fw-400 center-align cyan darken-4 py-3 z-depth-1 grey-text text-lighten-5 heading-main">LATEST NOVEL</h3>
-                    <div class="row">
-
-                        <div class="col s12 m6 l3 mb-4">
-                            <div class="card z-depth-1">
-                                <div class="card-image">
-                                    <img src="img/03.jpg" class="materialboxed">
-                                    <span class="card-title cyan darken-4 p-2 w-100 center-align truncate">Shinsekai Yori</span>
-                                    <a href="#" class="halfway-fab btn-floating cyan darken-1 z-depth-1 center-align fw-600">03</a>
-                                </div>
-                                <div class="card-content py-3">
-                                    <p class="valign-wrapper fw-500"><small><i class="material-icons cyan-text text-darken-4 mr-2">person</i></small>Sayed Rafi</p>
-                                    <span class="valign-wrapper my-1"><i class="material-icons ml-1 mr-3 cyan-text text-darken-4 tiny">local_offer</i>Slice Of Life, Action, Comedy</span>
-                                    <span class="valign-wrapper my-1"><i class="material-icons ml-1 mr-3 cyan-text text-darken-4 tiny">library_books</i>Ongoing</span>
-                                    <span class="valign-wrapper my-1"><i class="material-icons ml-1 mr-3 cyan-text text-darken-4 tiny">pages</i>3 Chapters</span>
-                                </div>
-                                <div class="card-action center-align py-2 center-align">
-                                    <a href="#" class="white-text mx-0 w-50 btn-small mx-2 cyan darken-4 waves-effect waves-light">Read</a>
-                                    <a href="#modal1" class="white-text mx-0 w-50 btn-small mx-2 cyan darken-4 waves-effect waves-light modal-trigger">Summary</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col s12 m6 l3 mb-4">
-                            <div class="card z-depth-1">
-                                <div class="card-image">
-                                    <img src="img/03.jpg" class="materialboxed">
-                                    <span class="card-title cyan darken-4 p-2 w-100 center-align truncate">Shinsekai Yori</span>
-                                    <a href="#" class="halfway-fab btn-floating cyan darken-1 z-depth-1 center-align fw-600">03</a>
-                                </div>
-                                <div class="card-content py-3">
-                                    <p class="valign-wrapper fw-500"><small><i class="material-icons cyan-text text-darken-4 mr-2">person</i></small>Sayed Rafi</p>
-                                    <span class="valign-wrapper my-1"><i class="material-icons ml-1 mr-3 cyan-text text-darken-4 tiny">local_offer</i>Slice Of Life, Action, Comedy</span>
-                                    <span class="valign-wrapper my-1"><i class="material-icons ml-1 mr-3 cyan-text text-darken-4 tiny">library_books</i>Ongoing</span>
-                                    <span class="valign-wrapper my-1"><i class="material-icons ml-1 mr-3 cyan-text text-darken-4 tiny">pages</i>3 Chapters</span>
-                                </div>
-                                <div class="card-action center-align py-2 center-align">
-                                    <a href="#" class="white-text mx-0 w-50 btn-small mx-2 cyan darken-4 waves-effect waves-light">Read</a>
-                                    <a href="#modal1" class="white-text mx-0 w-50 btn-small mx-2 cyan darken-4 waves-effect waves-light modal-trigger">Summary</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col s12 m6 l3 mb-4">
-                            <div class="card z-depth-1">
-                                <div class="card-image">
-                                    <img src="img/03.jpg" class="materialboxed">
-                                    <span class="card-title cyan darken-4 p-2 w-100 center-align truncate">Shinsekai Yori</span>
-                                    <a href="#" class="halfway-fab btn-floating cyan darken-1 z-depth-1 center-align fw-600">03</a>
-                                </div>
-                                <div class="card-content py-3">
-                                    <p class="valign-wrapper fw-500"><small><i class="material-icons cyan-text text-darken-4 mr-2">person</i></small>Sayed Rafi</p>
-                                    <span class="valign-wrapper my-1"><i class="material-icons ml-1 mr-3 cyan-text text-darken-4 tiny">local_offer</i>Slice Of Life, Action, Comedy</span>
-                                    <span class="valign-wrapper my-1"><i class="material-icons ml-1 mr-3 cyan-text text-darken-4 tiny">library_books</i>Ongoing</span>
-                                    <span class="valign-wrapper my-1"><i class="material-icons ml-1 mr-3 cyan-text text-darken-4 tiny">pages</i>3 Chapters</span>
-                                </div>
-                                <div class="card-action center-align py-2 center-align">
-                                    <a href="#" class="white-text mx-0 w-50 btn-small mx-2 cyan darken-4 waves-effect waves-light">Read</a>
-                                    <a href="#modal1" class="white-text mx-0 w-50 btn-small mx-2 cyan darken-4 waves-effect waves-light modal-trigger">Summary</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col s12 m6 l3 mb-4">
-                            <div class="card z-depth-1">
-                                <div class="card-image">
-                                    <img src="img/03.jpg" class="materialboxed">
-                                    <span class="card-title cyan darken-4 p-2 w-100 center-align truncate">Shinsekai Yori</span>
-                                    <a href="#" class="halfway-fab btn-floating cyan darken-1 z-depth-1 center-align fw-600">03</a>
-                                </div>
-                                <div class="card-content py-3">
-                                    <p class="valign-wrapper fw-500"><small><i class="material-icons cyan-text text-darken-4 mr-2">person</i></small>Sayed Rafi</p>
-                                    <span class="valign-wrapper my-1"><i class="material-icons ml-1 mr-3 cyan-text text-darken-4 tiny">local_offer</i>Slice Of Life, Action, Comedy</span>
-                                    <span class="valign-wrapper my-1"><i class="material-icons ml-1 mr-3 cyan-text text-darken-4 tiny">library_books</i>Ongoing</span>
-                                    <span class="valign-wrapper my-1"><i class="material-icons ml-1 mr-3 cyan-text text-darken-4 tiny">pages</i>3 Chapters</span>
-                                </div>
-                                <div class="card-action center-align py-2 center-align">
-                                    <a href="#" class="white-text mx-0 w-50 btn-small mx-2 cyan darken-4 waves-effect waves-light">Read</a>
-                                    <a href="#modal1" class="white-text mx-0 w-50 btn-small mx-2 cyan darken-4 waves-effect waves-light modal-trigger">Summary</a>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-            </section>
-            <!-------------------->
-            <!-- Latest Tutorial -->
-            <!-------------------->
-            <section id="latest-tutorial">
-                <div class="col s12 m12 vl vr vb">
-                    <h3 class="fw-400 center-align grey darken-4 py-3 z-depth-1 grey-text text-lighten-5 heading-main">LATEST TUTORIAL</h3>
-                    <div class="row">
-
-                        <div class="col s12 l3 m6 mb-4">
-                            <a class="modal-trigger" href="#modal2"><img class="z-depth-1" src="img/tutorial.jpg"></a>
-                            <p class="py-1 my-0 grey-text text-darken-2 fw-600 truncate"><i class="material-icons"></i>All Eyes On Me ♫ ~ Cover by Victor McKnight</p>
-
-                        </div>
-
-                        <div class="col s12 l3 m6 mb-4">
-                            <a class="modal-trigger" href="#modal2"><img class="z-depth-1" src="img/tutorial.jpg"></a>
-                            <p class="py-1 my-0 grey-text text-darken-2 fw-600 truncate"><i class="material-icons"></i>All Eyes On Me ♫ ~ Cover by Victor McKnight</p>
-
-                        </div>
-
-                        <div class="col s12 l3 m6 mb-4">
-                            <a class="modal-trigger" href="#modal2"><img class="z-depth-1" src="img/tutorial.jpg"></a>
-                            <p class="py-1 my-0 grey-text text-darken-2 fw-600 truncate"><i class="material-icons"></i>All Eyes On Me ♫ ~ Cover by Victor McKnight</p>
-
-                        </div>
-
-                        <div class="col s12 l3 m6 mb-4">
-                            <a class="modal-trigger" href="#modal2"><img class="z-depth-1" src="img/tutorial.jpg"></a>
-                            <p class="py-1 my-0 grey-text text-darken-2 fw-600 truncate"><i class="material-icons"></i>All Eyes On Me ♫ ~ Cover by Victor McKnight</p>
-                        </div>
-
-                    </div>
-                </div>
-
-            </section>
-            <!-------------------->
-            <!-- Latest Arts -->
-            <!-------------------->
-            <section id="latest-art">
-                <div class="col s12 m12 vl vr vb">
-                    <h3 class="fw-400 center-align  deep-orange darken-4 py-3 z-depth-1 grey-text text-lighten-5 heading-main">LATEST ART</h3>
-                    <div class="row">
-
-                        <div class="col s6 m4 l2 mb-4">
-                            <img src="img/tutorial.jpg" class="materialboxed z-depth-1">
-                        </div>
-
-                        <div class="col s6 m4 l2 mb-4">
-                            <img src="img/tutorial.jpg" class="materialboxed z-depth-1">
-                        </div>
-
-                        <div class="col s6 m4 l2 mb-4">
-                            <img src="img/tutorial.jpg" class="materialboxed z-depth-1">
-                        </div>
-
-                        <div class="col s6 m4 l2 mb-4">
-                            <img src="img/tutorial.jpg" class="materialboxed z-depth-1">
-                        </div>
-
-                        <div class="col s6 m4 l2 mb-4">
-                            <img src="img/tutorial.jpg" class="materialboxed z-depth-1">
-                        </div>
-
-                        <div class="col s6 m4 l2 mb-4">
-                            <img src="img/tutorial.jpg" class="materialboxed z-depth-1">
-                        </div>
-
-
-                    </div>
-                </div>
-
-            </section>
-            <!-------------------->
-            <!-- Creative Ideas -->
-            <!-------------------->
-            <section id="creative-ideas">
-                <div class="col s12 m12 vl vr vb">
-                    <h3 class="fw-400 center-align  green darken-4 py-3 z-depth-1 grey-text text-lighten-5 heading-main">CREATIVE IDEA</h3>
-                    <div class="row">
-
-                        <div class="col s6 m4 l2 mb-4">
-                            <img src="img/tutorial.jpg" class="materialboxed z-depth-1">
-                        </div>
-
-                        <div class="col s6 m4 l2 mb-4">
-                            <img src="img/tutorial.jpg" class="materialboxed z-depth-1">
-                        </div>
-
-                        <div class="col s6 m4 l2 mb-4">
-                            <img src="img/tutorial.jpg" class="materialboxed z-depth-1">
-                        </div>
-
-                        <div class="col s6 m4 l2 mb-4">
-                            <img src="img/tutorial.jpg" class="materialboxed z-depth-1">
-                        </div>
-
-                        <div class="col s6 m4 l2 mb-4">
-                            <img src="img/tutorial.jpg" class="materialboxed z-depth-1">
-                        </div>
-
-                        <div class="col s6 m4 l2 mb-4">
-                            <img src="img/tutorial.jpg" class="materialboxed z-depth-1">
-                        </div>
-
-
-                    </div>
-                </div>
-
-            </section>
-
-
-            <!-------------------->
-            <!-- Contact Info -->
-            <!-------------------->
-            <section id="contact">
-                <div class="col s12 m12 l6 vl vr vb">
-
-                    <div class="row my-3 purple darken-4 z-depth-1 mx-2 contact-row">
-                        <div class="col s12 m12 center-align">
-                            <img src="img/logo.png" class="responsive-img my-3" style="height: 100px; border-radius: 50%; border: 5px solid white">
-                        </div>
-
-                        <div class="col s12 m6 mb-4 info">
-                            <p class="fw-400 pl-4 white-text flow-text">SAYED RAFI</p>
-                            <p class="fw-400 pl-4 white-text valign-wrapper"><i class="material-icons mr-3">camera</i>Founder &amp; Programmer</p>
-                            <p class="fw-400 pl-4 white-text valign-wrapper"><i class="material-icons mr-3">contact_phone</i>01521495318</p>
-                            <p class="fw-400 pl-4 white-text valign-wrapper"><i class="material-icons mr-3">contact_mail</i>sayedarrafi.bd@gmail.com</p>
-                        </div>
-
-                        <div class="col s12 m6 mb-4 info">
-                            <p class="fw-400 pl-4 white-text flow-text">ASHRAFUL RIBAT</p>
-                            <p class="fw-400 pl-4 white-text valign-wrapper"><i class="material-icons mr-3">camera</i>Founder</p>
-                            <p class="fw-400 pl-4 white-text valign-wrapper"><i class="material-icons mr-3">contact_phone</i>01686431392</p>
-                            <p class="fw-400 pl-4 white-text valign-wrapper"><i class="material-icons mr-3">contact_mail</i>ribat.bilad@gmail.com</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col s12 m12 l6 vr vl vb">
-
-                    <div class="row my-3 purple darken-2 z-depth-1 mx-2 valign-wrapper" style="height: 360px;">
-                        <div class="col s12 m12">
-                            <p class="white-text valign-wrapper pl-4 fw-600"><i class="fab fa-facebook-square mr-2" style="font-size: 3rem"></i>Visit Our Facebook Page</p>
-                            <p class="white-text valign-wrapper pl-4 fw-600"><i class="fab fa-twitter-square mr-2" style="font-size: 3rem"></i>Visit Our Twitter Account</p>
-                            <p class="white-text valign-wrapper pl-4 fw-600"><i class="fab fa-instagram mr-2" style="font-size: 3rem"></i>Visit Us on Instagram</p>
-                            <p class="white-text valign-wrapper pl-4 fw-600"><i class="fas fa-envelope-square mr-2" style="font-size: 3rem"></i>Contact Us</p>
-                        </div>
-                        <p class="flow-text right fw-700 white-text" style="letter-spacing: 8px; writing-mode: tb-rl;">COMICS GHOR</p>
-                    </div>
-                </div>
-
-            </section>
+            </div>
 
         </div>
     </div>
@@ -542,6 +482,10 @@
     <script src="js/jquery-3.4.1.min.js"></script>
     <!--Import Materialize afetr jQuery-->
     <script type="text/javascript" src="js/materialize.min.js"></script>
+    <!-- Import jQuery Box Slider -->
+    <script src="js/jquery.bxslider.min.js"></script>
     <!--Import Custom JS-->
     <script src="js/main.js"></script>
-</body></html>
+</body>
+
+</html>

@@ -69,9 +69,17 @@
 .vt {
     border-top: 1px dashed grey;
     height: 100%;
+
+    @media screen and (max-width: $lg) {
+        border: none;
+    }
 }
 
 .vb {
     border-bottom: 1px dashed grey;
     height: 100%;
+
+    @media screen and (max-width: $lg) {
+        border: none;
+    }
 }

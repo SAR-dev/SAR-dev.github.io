@@ -22,7 +22,7 @@
         }
 
         .card-action {
-            display: flex;
+            padding: 0;
         }
     }
 }
@@ -95,5 +95,21 @@
             letter-spacing: 2px;
         }
 
+    }
+}
+
+%slider-image {
+    .bx-wrapper {
+        margin: auto;
+
+        img {
+            height: 300px;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .bx-wrapper {
+        margin-bottom: 58px !important;
     }
 }

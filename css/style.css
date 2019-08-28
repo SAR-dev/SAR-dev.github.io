@@ -1539,10 +1539,16 @@
 .vt {
   border-top: 1px dashed grey;
   height: 100%; }
+  @media screen and (max-width: 1200px) {
+    .vt {
+      border: none; } }
 
 .vb {
   border-bottom: 1px dashed grey;
   height: 100%; }
+  @media screen and (max-width: 1200px) {
+    .vb {
+      border: none; } }
 
 #latest-comic .card, #latest-novel .card {
   max-width: 300px;
@@ -1557,11 +1563,9 @@
   #latest-comic .card .card-content span, #latest-novel .card .card-content span {
     font-size: .7rem; }
   #latest-comic .card .card-action, #latest-novel .card .card-action {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
+    padding: 0; }
 
-#latest-tutorial img, #latest-art img, #creative-ideas img {
+#latest-tutorial img {
   width: 100%;
   height: 200px;
   -o-object-fit: cover;
@@ -1603,6 +1607,17 @@
   #comic-list-page .comic .start-reading, #novel-list-page .comic .start-reading {
     letter-spacing: 2px; }
 
+#arts .bx-wrapper, #tutorial .bx-wrapper {
+  margin: auto; }
+  #arts .bx-wrapper img, #tutorial .bx-wrapper img {
+    height: 300px;
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover; }
+
+#arts .bx-wrapper, #tutorial .bx-wrapper {
+  margin-bottom: 58px !important; }
+
 html {
   scroll-behavior: smooth; }
 
@@ -1618,6 +1633,8 @@ html {
     #main-carousel .parallax-container .slogan h5 {
       letter-spacing: 4px; }
 
-@media screen and (min-width: 992px) {
-  #contact .contact-row {
-    height: 360px; } }
+#contact .contact-row {
+  margin-top: 20px; }
+  @media screen and (min-width: 600px) {
+    #contact .contact-row {
+      margin-top: 60px; } }

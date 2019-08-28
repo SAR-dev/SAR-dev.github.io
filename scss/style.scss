@@ -49,18 +49,23 @@ html {
     @extend %thumbnail-img;
 }
 
-#latest-art {
-    @extend %thumbnail-img;
+#arts {
+    @extend %slider-image;
 }
 
-#creative-ideas {
-    @extend %thumbnail-img;
+#tutorial {
+    @extend %slider-image;
 }
+
+
 
 #contact {
+
     .contact-row {
-        @media screen and (min-width: $md) {
-            height: 360px;
+        margin-top: 20px;
+
+        @media screen and (min-width: $sm) {
+            margin-top: 60px;
         }
     }
 }
