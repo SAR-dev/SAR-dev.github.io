@@ -36,3 +36,16 @@ body > #standalone-container {
     text-align: center;
     color: #353b48;
 }
+
+.home-btn {
+    text-decoration: none;
+    padding: 10px 25px;
+    font-size: 18px;
+    background-color: #10ac84;
+    color: white;
+    border-radius: 5px;
+}
+
+.home-btn:hover {
+    background-color: #0fb9b1;
+}

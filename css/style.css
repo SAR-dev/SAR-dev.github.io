@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Monda&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap");
 .justify-content-start {
   -ms-flex-pack: start !important;
@@ -1571,6 +1572,37 @@
   min-height: 65px !important;
   height: 70px; }
 
+#comic-list-page, #novel-list-page {
+  background-color: #2c3a47;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%239C92AC' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E"); }
+  #comic-list-page .header, #novel-list-page .header {
+    font-family: 'Monda', sans-serif;
+    padding-top: 250px;
+    text-shadow: 2px 2px 2px #CE5937; }
+  @media screen and (min-width: 992px) {
+    #comic-list-page .comic, #novel-list-page .comic {
+      margin-left: 100px;
+      margin-right: 100px; } }
+  @media screen and (min-width: 600px) {
+    #comic-list-page .comic, #novel-list-page .comic {
+      margin-left: 50px;
+      margin-right: 50px; } }
+  #comic-list-page .comic img, #novel-list-page .comic img {
+    height: 200px;
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover; }
+  #comic-list-page .comic .info, #novel-list-page .comic .info {
+    letter-spacing: .5px; }
+    #comic-list-page .comic .info h5, #novel-list-page .comic .info h5 {
+      letter-spacing: 1px; }
+    #comic-list-page .comic .info .author, #novel-list-page .comic .info .author {
+      text-transform: uppercase; }
+    #comic-list-page .comic .info p, #novel-list-page .comic .info p {
+      font-size: .9rem; }
+  #comic-list-page .comic .start-reading, #novel-list-page .comic .start-reading {
+    letter-spacing: 2px; }
+
 html {
   scroll-behavior: smooth; }
 
@@ -1589,25 +1621,3 @@ html {
 @media screen and (min-width: 992px) {
   #contact .contact-row {
     height: 360px; } }
-
-@media screen and (min-width: 992px) {
-  #comic-list-page .comic {
-    margin-left: 100px;
-    margin-right: 100px; } }
-
-@media screen and (min-width: 600px) {
-  #comic-list-page .comic {
-    margin-left: 50px;
-    margin-right: 50px; } }
-
-#comic-list-page .comic img {
-  height: 200px;
-  width: 100%;
-  -o-object-fit: cover;
-  object-fit: cover; }
-
-#comic-list-page .comic .info p {
-  font-size: .8rem; }
-
-#comic-list-page .comic .info a {
-  font-size: .9rem; }
