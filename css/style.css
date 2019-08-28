@@ -1607,15 +1607,15 @@
   #comic-list-page .comic .start-reading, #novel-list-page .comic .start-reading {
     letter-spacing: 2px; }
 
-#arts .bx-wrapper, #tutorial .bx-wrapper {
+#arts .bx-wrapper, #creative .bx-wrapper {
   margin: auto; }
-  #arts .bx-wrapper img, #tutorial .bx-wrapper img {
+  #arts .bx-wrapper img, #creative .bx-wrapper img {
     height: 300px;
     width: 100%;
     -o-object-fit: cover;
     object-fit: cover; }
 
-#arts .bx-wrapper, #tutorial .bx-wrapper {
+#arts .bx-wrapper, #creative .bx-wrapper {
   margin-bottom: 58px !important; }
 
 html {
