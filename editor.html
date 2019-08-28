@@ -10,6 +10,13 @@
     <link rel="stylesheet" href="quill/katex.min.css" />
     <link rel="stylesheet" href="quill/monokai-sublime.min.css" />
     <link rel="stylesheet" href="quill/quill.snow.css" />
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <!--Import Custom CSS-->
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="quill/quill-editor-custom.css">
 
     <link rel="shortcut icon" href="img/logo.png" />
@@ -18,9 +25,29 @@
 </head>
 
 <body>
-    <div style="text-align: center; margin-top:20px">
-        <a href="index.html" class="home-btn">HOME</a>
-    </div>
+    <a class="sidenav-trigger btn-large btn-floating pulse pink accent-3 menu" data-target="mobile-links"><i class="material-icons">menu</i></a>
+    <ul class="sidenav" id="mobile-links">
+        <li>
+            <div class="user-view">
+                <div class="background">
+                    <img src="img/back%20logo%2002.jpg">
+                </div>
+                <a href="#user"><img class="circle" src="img/logo.png" style="object-fit: cover;"></a>
+                <a href="#name"><span class="white-text text-darken-4 name">Comics Ghor(কমিক্স ঘর)</span></a>
+                <a href="email"><span class="white-text text-darken-4 email">comicshomebd@gmail.com</span></a>
+            </div>
+        </li>
+        <li><a href="#"><i class="material-icons">home</i>Home</a></li>
+        <li><a href="comic.html"><i class="material-icons">camera</i>Comic</a></li>
+        <li><a href="novel.html"><i class="material-icons">import_contacts</i>Novel</a></li>
+        <li><a href="#"><i class="material-icons">ondemand_video</i>Tutorial</a></li>
+        <li><a href="#"><i class="material-icons">palette</i>Arts</a></li>
+        <li><a href="#"><i class="material-icons">memory</i>Creative</a></li>
+        <li><a href="#"><i class="material-icons">people</i>Join Us</a></li>
+        <li class="active"><a href="editor.html"><i class="material-icons">screen_share</i>Submit</a></li>
+        <li><a href="#"><i class="material-icons">contacts</i>About Us</a></li>
+    </ul>
+
 
     <h1 class="head">ARTICLE EDITOR</h1>
 
@@ -80,6 +107,14 @@
     <script src="quill/katex.min.js"></script>
     <script src="quill/highlight.min.js"></script>
     <script src="quill/quill.min.js"></script>
+
+    <!--Import jQuery-->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <!--Import Materialize afetr jQuery-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <!--Import Custom JS-->
+    <script src="js/main.js"></script>
+
     <script src="quill/quill-editor-custom.js"></script>
 
 </body></html>

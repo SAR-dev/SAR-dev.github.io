@@ -1578,7 +1578,7 @@
   #comic-list-page .header, #novel-list-page .header {
     font-family: 'Monda', sans-serif;
     padding-top: 250px;
-    text-shadow: 2px 2px 2px #CE5937; }
+    text-shadow: 2px 2px 2px #222f3e; }
   @media screen and (min-width: 992px) {
     #comic-list-page .comic, #novel-list-page .comic {
       margin-left: 100px;
